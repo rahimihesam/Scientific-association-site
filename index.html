@@ -10,7 +10,7 @@
   <body>
     <!-- NavBar -->
     <nav
-      class="navbar navbar-expand-md fixed-top bg-white border-bottom shadow-lg rounded-bottom-3"
+      class="navbar navbar-expand-xxl fixed-top bg-white border-bottom shadow-lg rounded-bottom-3"
     >
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -26,50 +26,63 @@
             height="60"
             class="rounded-3"
           /> -->
+          <h5>انجمن علمی کامپیوتر</h5>
         </a>
 
         <button
-          class="navbar-toggler"
+          class="navbar-toggler custom-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#nav-collapse"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="nav-collapse">
           <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item">
-              <a href="index.html" class="nav-link">خانه</a>
+              <a href="index.html" class="nav-link custom-a custom-a-active"
+                >خانه</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">دوره ها</a>
+              <a href="#" class="nav-link custom-a">دوره ها</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-primary">آموزش های آفلاین</a>
+              <a href="#" class="nav-link custom-a">آموزش های آفلاین</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">درباره ما</a>
+              <a href="#" class="nav-link custom-a">مقالات</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">مقالات</a>
+              <a href="#" class="nav-link custom-a">اخبار و اطلاعیه ها</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">اخبار و اطلاعیه ها</a>
+              <a href="#" class="nav-link custom-a">رویدادها</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">رویدادها</a>
+              <a href="#" class="nav-link custom-a">گواهینامه ها</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">گواهینامه ها</a>
+              <a href="#" class="nav-link custom-a">انجمن</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">ارتباط با ما</a>
+              <a href="#" class="nav-link custom-a">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link custom-a">ارتباط با ما</a>
             </li>
           </ul>
           <br />
-          <a href="contactus.html" class="btn btn-outline-primary rounded-3 d-block"
-            >ثبت نام/ورود</a
+          <a
+            href="signup.html"
+            class="btn btn-outline-primary rounded-3 d-block p-2 me-lg-1 m-1"
+            >ثبت نام</a
+          >
+          <a
+            href="login.html"
+            class="btn btn-outline-primary rounded-3 d-block p-2 me-lg-1 m-1"
+            >ورود</a
           >
         </div>
       </div>
@@ -77,6 +90,6 @@
 
     <!-- Scripts -->
     <script src="./src/js/bootstrap.bundle.min.js"></script>
-    <script src="./src/js/scripy.js"></script>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>

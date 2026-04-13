@@ -1,3 +1,8 @@
+:root {
+  --Custom-Black: #000000;
+  --Custom-Blue: #0d6efd;
+}
+
 /* Font */
 @font-face {
   font-family: "Vazir";
@@ -35,4 +40,141 @@ h3,
 h4,
 h5 {
   font-family: "VazirBold", sans-serif;
+}
+
+/* Text Selection  */
+::selection {
+  background-color: var(--Custom-Blue);
+  color: white;
+}
+
+/* Scroll-Bar Effect */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--Custom-Blue) rgba(0, 0, 0, 0);
+}
+/* Chrome */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--Custom-Blue);
+}
+
+/* فقط برای صفحه‌های موبایل */
+@media (max-width: 1399px) {
+  .custom-toggler {
+    border: none;
+    padding: 8px;
+  }
+
+  .custom-toggler:focus {
+    box-shadow: none;
+  }
+
+  /* حذف آیکون پیش‌فرض بوت‌استرپ */
+  .custom-toggler .navbar-toggler-icon {
+    display: none;
+  }
+
+  /* ساخت آیکون کاستوم */
+  .custom-toggler .toggler-icon {
+    width: 28px;
+    height: 3px;
+    background-color: var(--Custom-Black);
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .custom-toggler .toggler-icon::before,
+  .custom-toggler .toggler-icon::after {
+    content: "";
+    width: 28px;
+    height: 3px;
+    background-color: var(--Custom-Black);
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+
+  .custom-toggler .toggler-icon::before {
+    top: -8px;
+  }
+
+  .custom-toggler .toggler-icon::after {
+    top: 8px;
+  }
+
+  /* حالت فعال هنگام باز شدن منو */
+  .custom-toggler.active .toggler-icon {
+    background-color: transparent;
+  }
+
+  .custom-toggler.active .toggler-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .custom-toggler.active .toggler-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+/* Links */
+.custom-a {
+  position: relative;
+  font-size: medium;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--Custom-Black);
+  opacity: 0.75;
+  transition:
+    opacity 0.3s ease,
+    color 0.3s ease;
+}
+.custom-a:hover {
+  opacity: 1;
+  color: var(--Custom-Blue);
+}
+.custom-a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: var(--Custom-Blue);
+  border-radius: 5px;
+
+  transform: translateY(10px);
+  opacity: 0;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+.custom-a:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+.custom-a-active {
+  color: var(--Custom-Blue);
+  opacity: 1;
+}
+.custom-a-active::after {
+  transform: translateY(0);
+  opacity: 1;
 }
