@@ -42,6 +42,11 @@ h5 {
   font-family: "VazirBold", sans-serif;
 }
 
+/* A */
+a{
+  text-decoration: none;
+}
+
 /* Text Selection  */
 ::selection {
   background-color: var(--Custom-Blue);
@@ -133,6 +138,16 @@ h5 {
   }
 }
 
+/* Text Justify */
+.text-justify {
+  text-align: justify;
+}
+
+/* Direction left */
+.D-left {
+  direction: ltr;
+}
+
 /* Links */
 .custom-a {
   position: relative;
@@ -177,4 +192,9 @@ h5 {
 .custom-a-active::after {
   transform: translateY(0);
   opacity: 1;
+}
+
+/* Hero Section */
+.hero-margin {
+  margin-top: 5.3rem;
 }
