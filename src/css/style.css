@@ -1,0 +1,38 @@
+/* Font */
+@font-face {
+  font-family: "Vazir";
+  src:
+    url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "VazirBold";
+  src:
+    url("../fonts/Vazir-Bold.woff2") format("woff2"),
+    url("../fonts/Vazir-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Body & Html*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  direction: rtl;
+  box-sizing: border-box;
+  margin: 0%;
+  font-family: "Vazir", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* h1~5 */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "VazirBold", sans-serif;
+}
