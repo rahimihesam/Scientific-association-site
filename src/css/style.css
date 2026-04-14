@@ -42,11 +42,6 @@ h5 {
   font-family: "VazirBold", sans-serif;
 }
 
-/* A */
-a{
-  text-decoration: none;
-}
-
 /* Text Selection  */
 ::selection {
   background-color: var(--Custom-Blue);
@@ -76,7 +71,7 @@ a{
 ::-webkit-scrollbar-thumb:hover {
   background: var(--Custom-Blue);
 }
-
+/* Hamber Menu */
 /* فقط برای صفحه‌های موبایل */
 @media (max-width: 1399px) {
   .custom-toggler {
@@ -198,3 +193,30 @@ a{
 .hero-margin {
   margin-top: 5.3rem;
 }
+
+/* Search Bar Styling */
+.search-box input {
+  border: 2px solid #d0d0d0;
+  transition: 0.2s ease;
+  min-width: 200px;
+}
+
+.search-box input:focus {
+  border-color: var(--Custom-Blue);
+  box-shadow: none;
+}
+
+.search-box button {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (max-width: 1399px) {
+  .search-box {
+    width: 100%;
+  }
+  .search-box input {
+    width: 100%;
+  }
+}
+
