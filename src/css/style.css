@@ -1,6 +1,7 @@
 :root {
   --Custom-Black: #000000;
   --Custom-Blue: #0d6efd;
+  --Custom-White: #fff;
 }
 
 /* Font */
@@ -45,7 +46,7 @@ h5 {
 /* Text Selection  */
 ::selection {
   background-color: var(--Custom-Blue);
-  color: white;
+  color: var(--Custom-White);
 }
 
 /* Scroll-Bar Effect */
@@ -73,7 +74,7 @@ h5 {
 }
 /* Hamber Menu */
 /* فقط برای صفحه‌های موبایل */
-@media (max-width: 1399px) {
+@media (max-width: 1491px) {
   .custom-toggler {
     border: none;
     padding: 8px;
