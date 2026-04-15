@@ -1,6 +1,5 @@
 project/
   ├─ index.html                (Home)
-  ├─ about.html                (About Us)
   ├─ courses.html              (Course List)
   ├─ course-detail.html        (Course Detail)
   ├─ learning-resources.html   (Learning Resources)
@@ -8,15 +7,20 @@ project/
   ├─ article-detail.html       (Article Detail)
   ├─ news.html                 (News & Announcements)
   ├─ events.html               (Events List)
-  ├─ event-detail.html         (Event Detail)
   ├─ certificates.html         (Certificate Verification)
+  ├─ certificate-test.html     (Certificate Verification)
   ├─ certificate-view.html     (Certificate View)
-  ├─ membership.html           (Membership)
-  ├─ login.html                (User Login)
   ├─ dashboard.html            (User Dashboard)
-  ├─ admin-panel.html	       (Admin Dashboard)
   ├─ faq.html                  (FAQ)
+  ├─ about.html                (About Us)
   ├─ contact.html              (Contact Us)
+  
+  ├─ login.html                (User Login)
+  ├─ regester.html             (User Signup)
+  ├─ search-result.html	       (Result of Searchimg)
+  
+  ├─ admin-panel.html	       (Admin Dashboard)
+  
   └─ assets/
       ├─ css/
       │   └─ style.css
