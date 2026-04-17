@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت‌نام</title>
+    <link href="./src/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body class="d-flex align-items-center justify-content-center min-vh-100 bg-light py-5">
+
+<div class="card shadow-sm border-0 rounded-4 p-4" style="width: 100%; max-width: 480px;">
+    <div class="text-center mb-4">
+        <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center mb-3"
+             style="width:56px;height:56px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="text-primary"
+                 viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            </svg>
+        </div>
+        <h4 class="fw-bold text-dark mb-1">ایجاد حساب کاربری</h4>
+        <p class="text-muted small mb-0">اطلاعات خود را برای ثبت‌نام وارد کنید</p>
+    </div>
+    <form id="registerForm" novalidate>
+        <!-- Full Name -->
+        <div class="mb-3">
+            <label for="fullName" class="form-label fw-medium">نام و نام خانوادگی</label>
+            <div class="input-group">
+          <span class="input-group-text bg-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-secondary"
+                 viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            </svg>
+          </span>
+                <input
+                        type="text"
+                        class="form-control rounded-end-2"
+                        id="fullName"
+                        placeholder="نام کامل خود را وارد کنید"
+                        required
+                        minlength="3"
+                >
+                <div class="invalid-feedback">نام باید حداقل ۳ کاراکتر باشد.</div>
+                <div class="valid-feedback">نام معتبر است.</div>
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="mb-3">
+            <label for="email" class="form-label fw-medium">ایمیل</label>
+            <div class="input-group">
+          <span class="input-group-text bg-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-secondary"
+                 viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z"/>
+            </svg>
+          </span>
+                <input
+                        type="email"
+                        class="form-control rounded-end-2"
+                        id="email"
+                        placeholder="example@email.com"
+                        required
+                >
+                <div class="invalid-feedback">لطفاً یک ایمیل معتبر وارد کنید.</div>
+                <div class="valid-feedback">ایمیل معتبر است.</div>
+            </div>
+        </div>
+        <!-- Password -->
+        <div class="mb-3">
+            <label for="password" class="form-label fw-medium">رمز عبور</label>
+            <div class="input-group">
+          <span class="input-group-text bg-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-secondary"
+                 viewBox="0 0 16 16">
+              <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+            </svg>
+          </span>
+                <input
+                        type="password"
+                        class="form-control border-end-0"
+                        id="password"
+                        placeholder="حداقل ۸ کاراکتر"
+                        required
+                        minlength="8"
+                >
+                <button class="input-group-text toggle-password bg-white" type="button" id="togglePassword"
+                        aria-label="نمایش رمز">
+                    <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="text-secondary" viewBox="0 0 16 16">
+                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- Strength bar -->
+            <div class="strength-bar mt-2">
+                <div class="strength-fill" id="strengthFill"></div>
+            </div>
+            <div class="mt-1">
+                <small id="strengthLabel" class="text-muted"></small>
+            </div>
+            <div class="invalid-feedback d-block small" id="passwordError"></div>
+        </div>
+        <!-- Confirm Password -->
+        <div class="mb-3">
+            <label for="confirmPassword" class="form-label fw-medium">تکرار رمز عبور</label>
+            <div class="input-group">
+          <span class="input-group-text bg-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-secondary"
+                 viewBox="0 0 16 16">
+              <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+            </svg>
+          </span>
+                <input
+                        type="password"
+                        class="form-control border-end-0"
+                        id="confirmPassword"
+                        placeholder="رمز عبور را دوباره وارد کنید"
+                        required
+                >
+                <button class="input-group-text toggle-password bg-white" type="button" id="toggleConfirmPassword"
+                        aria-label="نمایش رمز">
+                    <svg id="eyeIconConfirm" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                         fill="currentColor" class="text-secondary" viewBox="0 0 16 16">
+                        <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                        <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="invalid-feedback" id="confirmPasswordError">رمزهای عبور مطابقت ندارند.</div>
+            <div class="valid-feedback">رمز عبور مطابقت دارد.</div>
+        </div>
+        <!-- Terms -->
+        <div class="mb-4">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="terms" required>
+                <label class="form-check-label small text-muted" for="terms">
+                    <a href="#" class="text-primary text-decoration-none">قوانین و مقررات</a> را مطالعه کرده و می‌پذیرم
+                </label>
+                <div class="invalid-feedback">باید قوانین را بپذیرید.</div>
+            </div>
+        </div>
+        <!-- Submit -->
+        <button type="submit" class="btn btn-primary w-100 fw-semibold py-2" id="submitBtn">
+            ثبت‌نام
+        </button>
+    </form>
+    <hr class="my-4">
+    <p class="text-center text-muted small mb-0">
+        قبلاً ثبت‌نام کرده‌اید؟
+        <a href="login.html" class="text-primary text-decoration-none fw-medium">وارد شوید</a>
+    </p>
+</div>
+
+<script>
+    //register
+    const form = document.getElementById('registerForm');
+    const fullNameInput = document.getElementById('fullName');
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirmPassword');
+    const termsCheckbox = document.getElementById('terms');
+    const toggleBtn = document.getElementById('togglePassword');
+    const toggleConfirmBtn = document.getElementById('toggleConfirmPassword');
+    const eyeIcon = document.getElementById('eyeIcon');
+    const eyeIconConfirm = document.getElementById('eyeIconConfirm');
+    const strengthFill = document.getElementById('strengthFill');
+    const strengthLabel = document.getElementById('strengthLabel');
+    const passwordError = document.getElementById('passwordError');
+    const confirmPasswordError = document.getElementById('confirmPasswordError');
+    const submitBtn = document.getElementById('submitBtn');
+
+    const eyeOpen = `<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>`;
+    const eyeClosed = `<path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"/><path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"/><path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z"/>`;
+
+    toggleBtn.addEventListener('click', () => {
+        const isPass = passwordInput.type === 'password';
+        passwordInput.type = isPass ? 'text' : 'password';
+        eyeIcon.innerHTML = isPass ? eyeClosed : eyeOpen;
+    });
+
+    toggleConfirmBtn.addEventListener('click', () => {
+        const isPass = confirmPasswordInput.type === 'password';
+        confirmPasswordInput.type = isPass ? 'text' : 'password';
+        eyeIconConfirm.innerHTML = isPass ? eyeClosed : eyeOpen;
+    });
+
+    passwordInput.addEventListener('input', () => {
+        const val = passwordInput.value;
+        passwordError.textContent = '';
+        passwordInput.classList.remove('is-invalid');
+
+        if (val.length === 0) {
+            strengthFill.style.width = '0%';
+            strengthLabel.textContent = '';
+            return;
+        }
+
+        let score = 0;
+        if (val.length >= 8) score++;
+        if (/[A-Z]/.test(val)) score++;
+        if (/[0-9]/.test(val)) score++;
+        if (/[^A-Za-z0-9]/.test(val)) score++;
+
+        const levels = [
+            { width: '25%', cls: 'bg-danger',  label: 'ضعیف',  labelCls: 'text-danger'  },
+            { width: '50%', cls: 'bg-warning', label: 'متوسط', labelCls: 'text-warning' },
+            { width: '75%', cls: 'bg-info',    label: 'خوب',   labelCls: 'text-info'    },
+            { width: '100%',cls: 'bg-success', label: 'قوی',   labelCls: 'text-success' },
+        ];
+
+        const lvl = levels[score - 1] || levels[0];
+        strengthFill.style.width = lvl.width;
+        strengthFill.className = `strength-fill ${lvl.cls}`;
+        strengthLabel.textContent = `قدرت رمز: ${lvl.label}`;
+        strengthLabel.className = `small ${lvl.labelCls}`;
+
+        validateConfirmPassword();
+    });
+
+    confirmPasswordInput.addEventListener('input', validateConfirmPassword);
+
+    function validateConfirmPassword() {
+        if (!confirmPasswordInput.value) return;
+        const match = passwordInput.value === confirmPasswordInput.value;
+        confirmPasswordInput.classList.toggle('is-valid', match);
+        confirmPasswordInput.classList.toggle('is-invalid', !match);
+    }
+
+    fullNameInput.addEventListener('blur', () => {
+        if (!fullNameInput.value) return;
+        const ok = fullNameInput.value.length >= 3;
+        fullNameInput.classList.toggle('is-valid', ok);
+        fullNameInput.classList.toggle('is-invalid', !ok);
+    });
+
+    emailInput.addEventListener('blur', () => {
+        if (!emailInput.value) return;
+        const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value);
+        emailInput.classList.toggle('is-valid', ok);
+        emailInput.classList.toggle('is-invalid', !ok);
+    });
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let valid = true;
+
+        // Full Name
+        if (fullNameInput.value.length < 3) {
+            fullNameInput.classList.add('is-invalid');
+            fullNameInput.classList.remove('is-valid');
+            valid = false;
+        } else {
+            fullNameInput.classList.add('is-valid');
+            fullNameInput.classList.remove('is-invalid');
+        }
+
+        // Email
+        const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value);
+        emailInput.classList.toggle('is-valid', emailOk);
+        emailInput.classList.toggle('is-invalid', !emailOk);
+        if (!emailOk) valid = false;
+
+        // Password
+        if (passwordInput.value.length < 8) {
+            passwordInput.classList.add('is-invalid');
+            passwordInput.classList.remove('is-valid');
+            passwordError.textContent = 'رمز عبور باید حداقل ۸ کاراکتر باشد.';
+            valid = false;
+        } else {
+            passwordInput.classList.add('is-valid');
+            passwordInput.classList.remove('is-invalid');
+        }
+
+        // Confirm Password
+        const match = passwordInput.value === confirmPasswordInput.value;
+        confirmPasswordInput.classList.toggle('is-valid', match);
+        confirmPasswordInput.classList.toggle('is-invalid', !match);
+        if (!match) valid = false;
+
+        // Terms
+        if (!termsCheckbox.checked) {
+            termsCheckbox.classList.add('is-invalid');
+            valid = false;
+        } else {
+            termsCheckbox.classList.remove('is-invalid');
+        }
+
+        if (valid) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status"></span>در حال ثبت‌نام...`;
+            setTimeout(() => {
+                submitBtn.classList.replace('btn-success', 'btn-success');
+                submitBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>ثبت‌نام موفق`;
+            }, 1500);
+        }
+    });
+</script>
+<script src="./src/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

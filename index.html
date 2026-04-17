@@ -1,674 +1,672 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/bootstrap.rtl.min.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="./src/css/style.css"/>
     <link
-      rel="stylesheet"
-      href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            rel="stylesheet"
     />
-    <link href="./src/img/ico.png" rel="icon" />
+    <link href="./src/img/ico.png" rel="icon"/>
     <title>انجمن علمی دانشگاه خوارزمی(شهرضا) - خانه</title>
-  </head>
-  <body>
-    <!-- NavBar -->
-    <nav
-      class="navbar navbar-expand-xxl fixed-top bg-white border-bottom shadow-lg rounded-bottom-3"
-    >
-      <div class="container-fluid">
+</head>
+<body>
+<!-- NavBar -->
+<nav class="navbar navbar-expand-xxl fixed-top bg-white border-bottom shadow-lg ">
+    <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img
-            src="./src/img/logo.png"
-            alt="logo"
-            height="60"
-            class="me-2 rounded-4"
-          />
-          <h5>انجمن علمی کامپیوتر</h5>
+            <img
+                    src="./src/img/logo.png"
+                    alt="logo"
+                    height="60"
+                    class="me-2 rounded-4"
+            />
+            <h5>انجمن علمی کامپیوتر</h5>
         </a>
 
         <!-- Hamburger Toggle -->
         <button
-          class="navbar-toggler custom-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#nav-collapse"
+                class="navbar-toggler custom-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-collapse"
         >
-          <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
         </button>
 
         <!-- Collapsed Content -->
         <div class="collapse navbar-collapse" id="nav-collapse">
-          <!-- Menus -->
-          <ul class="navbar-nav mx-auto text-center mb-2 mb-xxl-0">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link custom-a custom-a-active"
-                >خانه</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="courses.html" class="nav-link custom-a">دوره ها</a>
-            </li>
-            <li class="nav-item">
-              <a href="offline-courses.html" class="nav-link custom-a"
-                >آموزش های آفلاین</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="articles.html" class="nav-link custom-a">مقالات</a>
-            </li>
-            <li class="nav-item">
-              <a href="news.html" class="nav-link custom-a"
-                >اخبار و اطلاعیه ها</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="events.html" class="nav-link custom-a">رویدادها</a>
-            </li>
-            <li class="nav-item">
-              <a href="certificates.html" class="nav-link custom-a"
-                >گواهینامه ها</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="cult.html" class="nav-link custom-a">انجمن</a>
-            </li>
-            <li class="nav-item">
-              <a href="aboutus.html" class="nav-link custom-a">درباره ما</a>
-            </li>
-            <li class="nav-item">
-              <a href="contactus.html" class="nav-link custom-a"
-                >ارتباط با ما</a
-              >
-            </li>
-          </ul>
+            <!-- Menus -->
+            <ul class="navbar-nav mx-auto text-center mb-2 mb-xxl-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link custom-a custom-a-active"
+                    >خانه</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link custom-a">دوره ها</a>
+                </li>
+                <li class="nav-item">
+                    <a href="offline-courses.html" class="nav-link custom-a"
+                    >آموزش های آفلاین</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="articles.html" class="nav-link custom-a">مقالات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link custom-a"
+                    >اخبار و اطلاعیه ها</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link custom-a">رویدادها</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certificates.html" class="nav-link custom-a"
+                    >گواهینامه ها</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="cult.html" class="nav-link custom-a">انجمن</a>
+                </li>
+                <li class="nav-item">
+                    <a href="aboutus.html" class="nav-link custom-a">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contactus.html" class="nav-link custom-a"
+                    >ارتباط با ما</a
+                    >
+                </li>
+            </ul>
 
-          <!-- Search Bar -->
-          <form class="d-flex mx-auto my-3 my-xxl-0 search-box" role="search">
-            <input
-              class="form-control rounded-start-4 rounded-end-0"
-              type="search"
-              placeholder="جستجو..."
-            />
-            <button
-              class="btn btn-primary rounded-end-4 rounded-start-0"
-              type="submit"
-            >
-              <i class="fa fa-search"></i>
-            </button>
-          </form>
+            <!-- Search Bar -->
+            <form class="d-flex mx-auto my-3 my-xxl-0 search-box" role="search">
+                <input
+                        class="form-control rounded-start-4 rounded-end-0"
+                        type="search"
+                        placeholder="جستجو..."
+                />
+                <button
+                        class="btn btn-primary rounded-end-4 rounded-start-0"
+                        type="submit"
+                >
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
 
-          <!-- Login Buttons -->
-          <a
-            href="./L-R/login.html"
-            class="btn btn-outline-primary rounded-4 d-block p-2 me-lg-1 m-1"
-            >ورود</a
-          >
-
-          <a
-            href="./L-R/register.html"
-            class="btn btn-outline-primary rounded-4 d-block p-2 me-lg-1 m-1"
-            >ثبت نام</a
-          >
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero -->
-    <div class="bg-black hero-margin">
-      <div class="container">
-        <br />
-        <div class="row">
-          <div class="col-lg-6 col-sm-12 p-3">
-            <h2 class="text-white text-justify p-3">انجمن علمی کامپیوتر</h2>
-            <p class="h6 text-white p-3">
-              برگزاری دوره‌های تخصصی برنامه‌نویسی، هوش مصنوعی، وب و شبکه، انتشار
-              مقالات علمی و برگزاری رویدادهای آموزشی برای دانشجویان و
-              علاقه‌مندان کامپیوتر.
-            </p>
-            <a href="courses.html" class="btn btn-outline-primary rounded-4"
-              >مشاهده دوره‌ها</a
-            >
+            <!-- Login Buttons -->
             <a
-              href="./L-R/register.html"
-              class="btn btn-outline-primary rounded-4 m-3"
-              >عضویت در انجمن</a
+                    href="./L-R/login.html"
+                    class="btn btn-outline-primary rounded-4 d-block p-2 me-lg-1 m-1"
+            >ورود</a
             >
-            <div>
-              <span class="text-white mx-2">+۲۰ دوره فعال </span>
-              <span class="text-white mx-2">+۳۰۰ عضو</span>
-              <span class="text-white mx-2">گواهینامه معتبر دانشگاهی</span>
-            </div>
-          </div>
-          <div
-            class="bg-white col-lg-6 col-sm-12 rounded-4 justify-content-end py-4"
-          >
-            <h3 class="py-2 d-inline-block">دوره در حال ثبت‌نام</h3>
-            <span class="badge bg-success rounded-4">در حال ثبت‌نام</span>
 
-            <p>وب دولوپمنت با JavaScript و React</p>
-            <p class="mx-2">
-              مدرس:
-              <span>دکتر الف</span>
-            </p>
-            <p class="mx-2">
-              سطح:
-              <span>متوسط</span>
-            </p>
-            <p class="mx-2">
-              شروع:
-              <span> ۲۰ اردیبهشت</span>
-            </p>
-            <a href="" class="link-primary text-decoration-none"
-              >مشاهده جزئیات دوره</a
+            <a
+                    href="./L-R/register.html"
+                    class="btn btn-outline-primary rounded-4 d-block p-2 me-lg-1 m-1"
+            >ثبت نام</a
             >
-          </div>
         </div>
-        <br />
-      </div>
     </div>
+</nav>
 
-    <!-- Starting Courses -->
-    <div class="bg-secondary-subtle py-5">
-      <div class="container d-flex justify-content-between">
+<!-- Hero -->
+<div class="bg-black hero-margin">
+    <div class="container">
+        <br/>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 p-3">
+                <h2 class="text-white text-justify p-3">انجمن علمی کامپیوتر</h2>
+                <p class="h6 text-white p-3">
+                    برگزاری دوره‌های تخصصی برنامه‌نویسی، هوش مصنوعی، وب و شبکه، انتشار
+                    مقالات علمی و برگزاری رویدادهای آموزشی برای دانشجویان و
+                    علاقه‌مندان کامپیوتر.
+                </p>
+                <a href="courses.html" class="btn btn-outline-primary rounded-4"
+                >مشاهده دوره‌ها</a
+                >
+                <a
+                        href="./L-R/register.html"
+                        class="btn btn-outline-primary rounded-4 m-3"
+                >عضویت در انجمن</a
+                >
+                <div>
+                    <span class="text-white mx-2">+۲۰ دوره فعال </span>
+                    <span class="text-white mx-2">+۳۰۰ عضو</span>
+                    <span class="text-white mx-2">گواهینامه معتبر دانشگاهی</span>
+                </div>
+            </div>
+            <div
+                    class="bg-white col-lg-6 col-sm-12 rounded-4 justify-content-end py-4 border-start border-primary border-5"
+            >
+                <h3 class="py-2 d-inline-block">دوره در حال ثبت‌نام</h3>
+                <span class="badge bg-success rounded-4">در حال ثبت‌نام</span>
+
+                <p>وب دولوپمنت با JavaScript و React</p>
+                <p class="mx-2">
+                    مدرس:
+                    <span>دکتر الف</span>
+                </p>
+                <p class="mx-2">
+                    سطح:
+                    <span>متوسط</span>
+                </p>
+                <p class="mx-2">
+                    شروع:
+                    <span> ۲۰ اردیبهشت</span>
+                </p>
+                <a href="" class="link-primary text-decoration-none"
+                >مشاهده جزئیات دوره</a
+                >
+            </div>
+        </div>
+        <br/>
+    </div>
+</div>
+
+<!-- Starting Courses -->
+<div class="bg-secondary-subtle py-5">
+    <div class="container d-flex justify-content-between">
         <span class="row d-flex">
           <h4 class="mx-2 row">دوره‌های در حال برگزاری</h4>
           <p>منتخب دوره‌های فعال انجمن علمی کامپیوتر</p>
         </span>
 
         <a
-          href="courses.html"
-          class="link-dark text-decoration-none text-sm-center text-primary"
-          >مشاهده همه دوره‌ها</a
+                href="courses.html"
+                class="link-dark text-decoration-none text-sm-center text-primary"
+        >مشاهده همه دوره‌ها</a
         >
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="bg-white py-3 rounded-4 mb-3 p-3">
-              <h5>برنامه‌نویسی پیشرفته با Python</h5>
-              <p class="mx-2">
-                مدرس:
-                <span>دکتر الف</span>
-              </p>
-              <p class="mx-2">
-                سطح:
-                <span>متوسط</span>
-              </p>
-              <p class="text-justify">
-                آموزش مفاهیم پیشرفته پایتون، کار با کتابخانه‌ها، تست و معماری
-                نرم‌افزار.
-              </p>
-              <p class="d-flex justify-content-between">
-                <span class="badge bg-success rounded-4">در حال ثبت‌نام</span>
-                <span>رایگان</span>
-              </p>
-              <a href="" class="link-primary text-decoration-none"
-                >مشاهده جزئیات دوره</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="bg-white py-3 rounded-4 mb-3 p-3">
-              <h5>برنامه‌نویسی پیشرفته با Python</h5>
-              <p class="mx-2">
-                مدرس:
-                <span>دکتر الف</span>
-              </p>
-              <p class="mx-2">
-                سطح:
-                <span>متوسط</span>
-              </p>
-              <p class="text-justify">
-                آموزش مفاهیم پیشرفته پایتون، کار با کتابخانه‌ها، تست و معماری
-                نرم‌افزار.
-              </p>
-              <p class="d-flex justify-content-between">
-                <span class="badge bg-warning rounded-4"
-                  >نزدیک به تکمیل ظرفیت</span
-                >
-                <span>رایگان</span>
-              </p>
-              <a href="" class="link-primary text-decoration-none"
-                >مشاهده جزئیات دوره</a
-              >
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="bg-white py-3 rounded-4 mb-3 p-3">
-              <h5>برنامه‌نویسی پیشرفته با Python</h5>
-              <p class="mx-2">
-                مدرس:
-                <span>دکتر الف</span>
-              </p>
-              <p class="mx-2">
-                سطح:
-                <span>متوسط</span>
-              </p>
-              <p class="text-justify">
-                آموزش مفاهیم پیشرفته پایتون، کار با کتابخانه‌ها، تست و معماری
-                نرم‌افزار.
-              </p>
-              <p class="d-flex justify-content-between">
-                <span class="badge bg-primary rounded-4">در حال برگزاری</span>
-                <span>رایگان</span>
-              </p>
-              <a href="" class="link-primary text-decoration-none"
-                >مشاهده جزئیات دوره</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="bg-white py-3 rounded-4 mb-3 p-3 border-start border-primary border-5">
+                    <h5>برنامه‌نویسی پیشرفته با Python</h5>
+                    <p class="mx-2">
+                        مدرس:
+                        <span>دکتر الف</span>
+                    </p>
+                    <p class="mx-2">
+                        سطح:
+                        <span>متوسط</span>
+                    </p>
+                    <p class="text-justify">
+                        آموزش مفاهیم پیشرفته پایتون، کار با کتابخانه‌ها، تست و معماری
+                        نرم‌افزار.
+                    </p>
+                    <p class="d-flex justify-content-between">
+                        <span class="badge bg-success rounded-4">در حال ثبت‌نام</span>
+                        <span>رایگان</span>
+                    </p>
+                    <a href="" class="link-primary text-decoration-none"
+                    >مشاهده جزئیات دوره</a
+                    >
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="bg-white py-3 rounded-4 mb-3 p-3 border-start border-primary border-5">
+                    <h5>برنامه‌نویسی پیشرفته با Python</h5>
+                    <p class="mx-2">
+                        مدرس:
+                        <span>دکتر الف</span>
+                    </p>
+                    <p class="mx-2">
+                        سطح:
+                        <span>متوسط</span>
+                    </p>
+                    <p class="text-justify">
+                        آموزش مفاهیم پیشرفته پایتون، کار با کتابخانه‌ها، تست و معماری
+                        نرم‌افزار.
+                    </p>
+                    <p class="d-flex justify-content-between">
+                <span class="badge bg-warning rounded-4 "
+                >نزدیک به تکمیل ظرفیت</span
+                >
+                        <span>رایگان</span>
+                    </p>
+                    <a href="" class="link-primary text-decoration-none"
+                    >مشاهده جزئیات دوره</a
+                    >
+                </div>
+            </div>
 
-    <!-- Last Articles  -->
-    <div class="py-5">
-      <div class="container d-flex justify-content-between">
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="bg-white py-3 rounded-4 mb-3 p-3 border-start border-primary border-5">
+                    <h5>برنامه‌نویسی پیشرفته با Python</h5>
+                    <p class="mx-2">
+                        مدرس:
+                        <span>دکتر الف</span>
+                    </p>
+                    <p class="mx-2">
+                        سطح:
+                        <span>متوسط</span>
+                    </p>
+                    <p class="text-justify">
+                        آموزش مفاهیم پیشرفته پایتون، کار با کتابخانه‌ها، تست و معماری
+                        نرم‌افزار.
+                    </p>
+                    <p class="d-flex justify-content-between">
+                        <span class="badge bg-primary rounded-4">در حال برگزاری</span>
+                        <span>رایگان</span>
+                    </p>
+                    <a href="" class="link-primary text-decoration-none"
+                    >مشاهده جزئیات دوره</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Last Articles  -->
+<div class="py-5">
+    <div class="container d-flex justify-content-between">
         <span class="row d-flex">
           <h4 class="mx-2 row">آخرین مقالات و مطالب علمی</h4>
           <p>جدیدترین مقالات منتشر شده توسط اعضا و اساتید</p>
         </span>
         <a
-          href="articles.html"
-          class="link-dark text-decoration-none text-sm-center text-primary"
-          >مشاهده همه مقالات</a
+                href="articles.html"
+                class="link-dark text-decoration-none text-sm-center text-primary"
+        >مشاهده همه مقالات</a
         >
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="py-3 rounded-4 mb-3 p-3 border">
-              <h5>آشنایی با معماری میکروسرویس‌ها</h5>
-              <p class="mx-2">
-                <span> مدرس:</span>
-                <span>دکتر الف</span>
-                <span class="border-start"> تاریخ:</span>
-                <span> ۱۴۰۳/۰۲/۱۰ </span>
-                <span class="border-start"> دسته:</span>
-                <span>وب</span>
-              </p>
-              <p class="text-justify">
-                در این مطلب با مفاهیم اصلی میکروسرویس‌ها، مزایا، چالش‌ها و
-                الگوهای رایج آشنا می‌شویم.
-              </p>
-              <a href="" class="link-primary text-decoration-none"
-                >ادامه مطلب</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="py-3 rounded-4 mb-3 p-3 border">
-              <h5>آشنایی با معماری میکروسرویس‌ها</h5>
-              <p class="mx-2">
-                <span> مدرس:</span>
-                <span>دکتر الف</span>
-                <span class="border-start"> تاریخ:</span>
-                <span> ۱۴۰۳/۰۲/۱۰ </span>
-                <span class="border-start"> دسته:</span>
-                <span>وب</span>
-              </p>
-              <p class="text-justify">
-                در این مطلب با مفاهیم اصلی میکروسرویس‌ها، مزایا، چالش‌ها و
-                الگوهای رایج آشنا می‌شویم.
-              </p>
-              <a href="" class="link-primary text-decoration-none"
-                >ادامه مطلب</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="py-3 rounded-4 mb-3 p-3 border">
-              <h5>آشنایی با معماری میکروسرویس‌ها</h5>
-              <p class="mx-2">
-                <span> مدرس:</span>
-                <span>دکتر الف</span>
-                <span class="border-start"> تاریخ:</span>
-                <span> ۱۴۰۳/۰۲/۱۰ </span>
-                <span class="border-start"> دسته:</span>
-                <span>وب</span>
-              </p>
-              <p class="text-justify">
-                در این مطلب با مفاهیم اصلی میکروسرویس‌ها، مزایا، چالش‌ها و
-                الگوهای رایج آشنا می‌شویم.
-              </p>
-              <a href="" class="link-primary text-decoration-none"
-                >ادامه مطلب</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="py-3 rounded-4 mb-3 p-3 border-start border-5">
+                    <h5>آشنایی با معماری میکروسرویس‌ها</h5>
+                    <p class="mx-2">
+                        <span> مدرس:</span>
+                        <span>دکتر الف</span>
+                        <span class="border-start"> تاریخ:</span>
+                        <span> ۱۴۰۳/۰۲/۱۰ </span>
+                        <span class="border-start"> دسته:</span>
+                        <span>وب</span>
+                    </p>
+                    <p class="text-justify">
+                        در این مطلب با مفاهیم اصلی میکروسرویس‌ها، مزایا، چالش‌ها و
+                        الگوهای رایج آشنا می‌شویم.
+                    </p>
+                    <a href="" class="link-primary text-decoration-none"
+                    >ادامه مطلب</a
+                    >
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="py-3 rounded-4 mb-3 p-3 border-start border-5">
+                    <h5>آشنایی با معماری میکروسرویس‌ها</h5>
+                    <p class="mx-2">
+                        <span> مدرس:</span>
+                        <span>دکتر الف</span>
+                        <span class="border-start"> تاریخ:</span>
+                        <span> ۱۴۰۳/۰۲/۱۰ </span>
+                        <span class="border-start"> دسته:</span>
+                        <span>وب</span>
+                    </p>
+                    <p class="text-justify">
+                        در این مطلب با مفاهیم اصلی میکروسرویس‌ها، مزایا، چالش‌ها و
+                        الگوهای رایج آشنا می‌شویم.
+                    </p>
+                    <a href="" class="link-primary text-decoration-none"
+                    >ادامه مطلب</a
+                    >
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="py-3 rounded-4 mb-3 p-3 border-start border-5">
+                    <h5>آشنایی با معماری میکروسرویس‌ها</h5>
+                    <p class="mx-2">
+                        <span> مدرس:</span>
+                        <span>دکتر الف</span>
+                        <span class="border-start"> تاریخ:</span>
+                        <span> ۱۴۰۳/۰۲/۱۰ </span>
+                        <span class="border-start"> دسته:</span>
+                        <span>وب</span>
+                    </p>
+                    <p class="text-justify">
+                        در این مطلب با مفاهیم اصلی میکروسرویس‌ها، مزایا، چالش‌ها و
+                        الگوهای رایج آشنا می‌شویم.
+                    </p>
+                    <a href="" class="link-primary text-decoration-none"
+                    >ادامه مطلب</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- News -->
-    <div class="py-5 bg-secondary-subtle">
-      <div class="container d-flex justify-content-between">
+<!-- News -->
+<div class="py-5 bg-secondary-subtle">
+    <div class="container d-flex justify-content-between">
         <span class="row d-flex">
           <h4 class="mx-2 row">آخرین اخبار و اطلاعیه‌ها</h4>
           <p>با جدیدترین رویدادها و اطلاعیه‌های انجمن همراه باشید</p>
         </span>
         <a
-          href="news.html"
-          class="link-dark text-decoration-none text-sm-center text-primary"
-          >مشاهده همه اخبار</a
+                href="news.html"
+                class="link-dark text-decoration-none text-sm-center text-primary"
+        >مشاهده همه اخبار</a
         >
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="py-3 bg-white rounded-4 mb-3 p-3">
-              <h5>برگزاری کارگاه React برای دانشجویان</h5>
-              <p class="mx-2">
-                <span class="border-end"> ۱۴۰۳/۰۲/۱۰ </span>
-                <span>کارگاه</span>
-              </p>
-              <p class="text-justify">
-                ثبت‌نام کارگاه فشرده React آغاز شد. ظرفیت محدود است
-              </p>
-              <a href="" class="link-primary text-decoration-none"
-                >ادامه مطلب</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="py-3 bg-white rounded-4 mb-3 p-3">
-              <h5>برگزاری کارگاه React برای دانشجویان</h5>
-              <p class="mx-2">
-                <span class="border-end"> ۱۴۰۳/۰۲/۱۰ </span>
-                <span>کارگاه</span>
-              </p>
-              <p class="text-justify">
-                ثبت‌نام کارگاه فشرده React آغاز شد. ظرفیت محدود است
-              </p>
-              <a href="" class="link-primary text-decoration-none"
-                >ادامه مطلب</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="py-3 bg-white rounded-4 mb-3 p-3">
-              <h5>برگزاری کارگاه React برای دانشجویان</h5>
-              <p class="mx-2">
-                <span class="border-end"> ۱۴۰۳/۰۲/۱۰ </span>
-                <span>کارگاه</span>
-              </p>
-              <p class="text-justify">
-                ثبت‌نام کارگاه فشرده React آغاز شد. ظرفیت محدود است
-              </p>
-              <a href="" class="link-primary text-decoration-none"
-                >ادامه مطلب</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="py-3 bg-white rounded-4 mb-3 p-3 border-start border-primary border-5">
+                    <h5>برگزاری کارگاه React برای دانشجویان</h5>
+                    <p class="mx-2">
+                        <span class="border-end"> ۱۴۰۳/۰۲/۱۰ </span>
+                        <span>کارگاه</span>
+                    </p>
+                    <p class="text-justify">
+                        ثبت‌نام کارگاه فشرده React آغاز شد. ظرفیت محدود است
+                    </p>
+                    <a href="" class="link-primary text-decoration-none"
+                    >ادامه مطلب</a
+                    >
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="py-3 bg-white rounded-4 mb-3 p-3 border-start border-primary border-5">
+                    <h5>برگزاری کارگاه React برای دانشجویان</h5>
+                    <p class="mx-2">
+                        <span class="border-end"> ۱۴۰۳/۰۲/۱۰ </span>
+                        <span>کارگاه</span>
+                    </p>
+                    <p class="text-justify">
+                        ثبت‌نام کارگاه فشرده React آغاز شد. ظرفیت محدود است
+                    </p>
+                    <a href="" class="link-primary text-decoration-none"
+                    >ادامه مطلب</a
+                    >
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="py-3 bg-white rounded-4 mb-3 p-3 border-start border-primary border-5">
+                    <h5>برگزاری کارگاه React برای دانشجویان</h5>
+                    <p class="mx-2">
+                        <span class="border-end"> ۱۴۰۳/۰۲/۱۰ </span>
+                        <span>کارگاه</span>
+                    </p>
+                    <p class="text-justify">
+                        ثبت‌نام کارگاه فشرده React آغاز شد. ظرفیت محدود است
+                    </p>
+                    <a href="" class="link-primary text-decoration-none"
+                    >ادامه مطلب</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Files for Download -->
-    <div class="py-5">
-      <div class="container d-flex justify-content-between">
+<!-- Files for Download -->
+<div class="py-5">
+    <div class="container d-flex justify-content-between">
         <span class="row d-flex">
           <h4 class="mx-2 row">فایل‌های آموزشی جدید</h4>
           <p>PDF، ویدیو، اسلاید و پروژه‌های آموزشی تازه اضافه‌شده</p>
         </span>
         <a
-          href="offline-courses.html"
-          class="link-dark text-decoration-none text-sm-center text-primary"
-          >مشاهده همه فایل‌ها</a
+                href="offline-courses.html"
+                class="link-dark text-decoration-none text-sm-center text-primary"
+        >مشاهده همه فایل‌ها</a
         >
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="py-3 rounded-4 mb-3 p-3 border">
-              <h5>اسلایدهای دوره Python پیشرفته</h5>
-              <p class="mx-2">
-                <span> نوع:</span>
-                <span>اسلاید</span>
-                <span class="border-start"> دسته:</span>
-                <span>Programming</span>
-              </p>
-              <a href="" class="link-primary text-decoration-none">دانلود</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="py-3 rounded-4 mb-3 p-3 border">
-              <h5>ویدیوی معرفی شبکه‌های عصبی</h5>
-              <p class="mx-2">
-                <span> نوع:</span>
-                <span>ویدیو</span>
-                <span class="border-start"> دسته:</span>
-                <span>AI</span>
-              </p>
-              <a href="" class="link-primary text-decoration-none">دانلود</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="py-3 rounded-4 mb-3 p-3 border">
-              <h5>PDF مبانی طراحی وب</h5>
-              <p class="mx-2">
-                <span> نوع:</span>
-                <span>PDF</span>
-                <span class="border-start"> دسته:</span>
-                <span>Web</span>
-              </p>
-              <a href="" class="link-primary text-decoration-none">دانلود</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="py-3 rounded-4 mb-3 p-3 border-start border-5">
+                    <h5>اسلایدهای دوره Python پیشرفته</h5>
+                    <p class="mx-2">
+                        <span> نوع:</span>
+                        <span>اسلاید</span>
+                        <span class="border-start"> دسته:</span>
+                        <span>Programming</span>
+                    </p>
+                    <a href="" class="link-primary text-decoration-none">دانلود</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="py-3 rounded-4 mb-3 p-3 border-start border-5">
+                    <h5>ویدیوی معرفی شبکه‌های عصبی</h5>
+                    <p class="mx-2">
+                        <span> نوع:</span>
+                        <span>ویدیو</span>
+                        <span class="border-start"> دسته:</span>
+                        <span>AI</span>
+                    </p>
+                    <a href="" class="link-primary text-decoration-none">دانلود</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="py-3 rounded-4 mb-3 p-3 border-start border-5">
+                    <h5>PDF مبانی طراحی وب</h5>
+                    <p class="mx-2">
+                        <span> نوع:</span>
+                        <span>PDF</span>
+                        <span class="border-start"> دسته:</span>
+                        <span>Web</span>
+                    </p>
+                    <a href="" class="link-primary text-decoration-none">دانلود</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Teachers -->
-    <div class="py-5 bg-secondary-subtle">
-      <div class="container d-flex justify-content-between">
+<!-- Teachers -->
+<div class="py-5 bg-secondary-subtle">
+    <div class="container d-flex justify-content-between">
         <span class="row d-flex">
           <h4 class="mx-2">اساتید و مدرسین انجمن</h4>
           <p>آشنایی با مدرسین دوره‌ها و اساتید مشاور</p>
         </span>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="py-3 bg-white rounded-4 mb-3 p-3">
-              <img
-                src="./src/img/logo(whit text).png"
-                alt=""
-                class="img-fluid"
-              />
-              <h5>دکتر الف</h5>
-              <p class="mx-2">
-                <span class="border-end">استاد مشاور</span>
-                <span>هوش مصنوعی</span>
-              </p>
-              <p class="text-justify">email@example.com</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="py-3 bg-white rounded-4 mb-3 p-3">
-              <img
-                src="./src/img/logo(whit text).png"
-                alt=""
-                class="img-fluid"
-              />
-              <h5>مهندس ب</h5>
-              <p class="mx-2">
-                <span>مدرس دوره‌های برنامه‌نویسی</span>
-              </p>
-              <p class="text-justify">linkedin.com/in/sample</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="py-3 bg-white rounded-4 mb-3 p-3">
-              <img
-                src="./src/img/logo(whit text).png"
-                alt=""
-                class="img-fluid"
-              />
-              <h5>مهندس ب</h5>
-              <p class="mx-2">
-                <span>مدرس دوره‌های برنامه‌نویسی</span>
-              </p>
-              <p class="text-justify">linkedin.com/in/sample</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="py-3 bg-white rounded-4 mb-3 p-3">
+                    <img
+                            src="./src/img/logo(whit text).png"
+                            alt=""
+                            class="img-fluid"
+                    />
+                    <h5>دکتر الف</h5>
+                    <p class="mx-2">
+                        <span class="border-end">استاد مشاور</span>
+                        <span>هوش مصنوعی</span>
+                    </p>
+                    <p class="text-justify">email@example.com</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="py-3 bg-white rounded-4 mb-3 p-3">
+                    <img
+                            src="./src/img/logo(whit text).png"
+                            alt=""
+                            class="img-fluid"
+                    />
+                    <h5>مهندس ب</h5>
+                    <p class="mx-2">
+                        <span>مدرس دوره‌های برنامه‌نویسی</span>
+                    </p>
+                    <p class="text-justify">linkedin.com/in/sample</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="py-3 bg-white rounded-4 mb-3 p-3">
+                    <img
+                            src="./src/img/logo(whit text).png"
+                            alt=""
+                            class="img-fluid"
+                    />
+                    <h5>مهندس ب</h5>
+                    <p class="mx-2">
+                        <span>مدرس دوره‌های برنامه‌نویسی</span>
+                    </p>
+                    <p class="text-justify">linkedin.com/in/sample</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Events -->
-    <div class="py-5">
-      <div class="container d-flex justify-content-between">
+<!-- Events -->
+<div class="py-5">
+    <div class="container d-flex justify-content-between">
         <span class="row d-flex">
           <h4 class="mx-2 row">تقویم رویدادها</h4>
           <p>رویدادهای پیش رو و مهم انجمن</p>
         </span>
         <a
-          href="events.html"
-          class="link-dark text-decoration-none text-sm-center text-primary"
-          >جزئیات همه رویدادها</a
+                href="events.html"
+                class="link-dark text-decoration-none text-sm-center text-primary"
+        >جزئیات همه رویدادها</a
         >
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="py-3 rounded-4 mb-3 p-3 border">
-              <h5>کارگاه Git و GitHub</h5>
-              <p class="mx-2">
-                <span> نوع:</span>
-                <span>کارگاه</span>
-                <span class="border-start"> تاریخ:</span>
-                <span>۱۴۰۳/۰۳/۰۵</span>
-              </p>
-              <p class="text-justify">
-                آموزش کاربردی کنترل نسخه و کار گروهی با Git و GitHub.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="py-3 rounded-4 mb-3 p-3 border">
-              <h5>کارگاه Git و GitHub</h5>
-              <p class="mx-2">
-                <span> نوع:</span>
-                <span>کارگاه</span>
-                <span class="border-start"> تاریخ:</span>
-                <span>۱۴۰۳/۰۳/۰۵</span>
-              </p>
-              <p class="text-justify">
-                آموزش کاربردی کنترل نسخه و کار گروهی با Git و GitHub.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 rounded-4">
-            <div class="py-3 rounded-4 mb-3 p-3 border">
-              <h5>کارگاه Git و GitHub</h5>
-              <p class="mx-2">
-                <span> نوع:</span>
-                <span>کارگاه</span>
-                <span class="border-start"> تاریخ:</span>
-                <span>۱۴۰۳/۰۳/۰۵</span>
-              </p>
-              <p class="text-justify">
-                آموزش کاربردی کنترل نسخه و کار گروهی با Git و GitHub.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <!-- Force to Join -->
-    <div class="bg-dark my-3">
-      <div class="container py-3">
+    <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-sm-12">
-            <h5 class="text-white">عضو انجمن علمی کامپیوتر شوید</h5>
-            <p class="text-white text-justify">
-              با عضویت در انجمن، در دوره‌ها، رویدادها، مسابقات و پروژه‌های گروهی
-              شرکت کنید و از مزایای ویژه دانشجویی بهره‌مند شوید.
-            </p>
-          </div>
-          <div
-            class="d-flex col-lg-6 col-sm-12 align-self-center justify-content-center"
-          >
-            <a
-              href="./L-R/register.html"
-              class="btn btn-outline-primary rounded-4 p-2 me-lg-1 m-1"
-              >ثبت نام</a
-            >
-            <a
-              href="aboutus.html"
-              class="btn btn-outline-warning rounded-4 p-2 me-lg-1 m-1"
-              >سؤالات متداول</a
-            >
-          </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="py-3 rounded-4 mb-3 p-3 border-start border-5">
+                    <h5>کارگاه Git و GitHub</h5>
+                    <p class="mx-2">
+                        <span> نوع:</span>
+                        <span>کارگاه</span>
+                        <span class="border-start"> تاریخ:</span>
+                        <span>۱۴۰۳/۰۳/۰۵</span>
+                    </p>
+                    <p class="text-justify">
+                        آموزش کاربردی کنترل نسخه و کار گروهی با Git و GitHub.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="py-3 rounded-4 mb-3 p-3 border-start border-5">
+                    <h5>کارگاه Git و GitHub</h5>
+                    <p class="mx-2">
+                        <span> نوع:</span>
+                        <span>کارگاه</span>
+                        <span class="border-start"> تاریخ:</span>
+                        <span>۱۴۰۳/۰۳/۰۵</span>
+                    </p>
+                    <p class="text-justify">
+                        آموزش کاربردی کنترل نسخه و کار گروهی با Git و GitHub.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-4">
+                <div class="py-3 rounded-4 mb-3 p-3 border-start border-5">
+                    <h5>کارگاه Git و GitHub</h5>
+                    <p class="mx-2">
+                        <span> نوع:</span>
+                        <span>کارگاه</span>
+                        <span class="border-start"> تاریخ:</span>
+                        <span>۱۴۰۳/۰۳/۰۵</span>
+                    </p>
+                    <p class="text-justify">
+                        آموزش کاربردی کنترل نسخه و کار گروهی با Git و GitHub.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+</div>
 
-    <!-- Footter -->
-    <div class="bg-dark">
-      <div class="container py-3 border-bottom">
+<!-- Force to Join -->
+<div class="bg-dark my-3">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <h5 class="text-white">عضو انجمن علمی کامپیوتر شوید</h5>
+                <p class="text-white text-justify">
+                    با عضویت در انجمن، در دوره‌ها، رویدادها، مسابقات و پروژه‌های گروهی
+                    شرکت کنید و از مزایای ویژه دانشجویی بهره‌مند شوید.
+                </p>
+            </div>
+            <div
+                    class="d-flex col-lg-6 col-sm-12 align-self-center justify-content-center"
+            >
+                <a
+                        href="./L-R/register.html"
+                        class="btn btn-outline-primary rounded-4 p-2 me-lg-1 m-1"
+                >ثبت نام</a
+                >
+                <a
+                        href="aboutus.html"
+                        class="btn btn-outline-warning rounded-4 p-2 me-lg-1 m-1"
+                >سؤالات متداول</a
+                >
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footter -->
+<div class="bg-dark">
+    <div class="container py-3 border-bottom">
         <div class="row text-white d-flex">
-          <div class="col-lg-4 col-sm-12 text-white">
-            <h5>انجمن علمی کامپیوتر</h5>
-            <p class="text-justify">
-              انجمن علمی دانشجویان کامپیوتر، برگزارکننده دوره‌ها و رویدادهای
-              علمی و پژوهشی در حوزه فناوری اطلاعات و مهندسی کامپیوتر.
-            </p>
-          </div>
-          <div class="col-lg-4 col-sm-12 text-center">
-            <h5>لینک‌های مفید</h5>
-            <a
-              class="d-block link-primary text-decoration-none text-white"
-              href="./L-R/register.html"
-              >عضویت در انجمن</a
-            >
-            <a
-              class="d-block link-primary text-decoration-none text-white"
-              href="certificates.html"
-              >استعلام گواهینامه</a
-            >
-            <a
-              class="d-block link-primary text-decoration-none text-white"
-              href="offline-courses.html"
-              >فایل‌های آموزشی</a
-            >
-            <a
-              class="d-block link-primary text-decoration-none text-white"
-              href="contactus.html"
-              >تماس با ما</a
-            >
-          </div>
-          <div class="col-lg-4 col-sm-12 text-center">
-            <h5>شبکه‌های اجتماعی</h5>
-            <a
-              class="d-block link-primary text-decoration-none text-white"
-              href="#"
-              >اینستاگرام <i class="fa fa-instagram"></i></a
-            >
-            <a
-              class="d-block link-primary text-decoration-none text-white"
-              href="#"
-              >تلگرام<i class="fa fa-telegram"></i></a
-            >
-            <a
-              class="d-block link-primary text-decoration-none text-white"
-              href="#"
-              >گیت‌هاب انجمن<i class="fa fa-github"></i></a
-            >
-          </div>
+            <div class="col-lg-4 col-sm-12 text-white">
+                <h5>انجمن علمی کامپیوتر</h5>
+                <p class="text-justify">
+                    انجمن علمی دانشجویان کامپیوتر، برگزارکننده دوره‌ها و رویدادهای
+                    علمی و پژوهشی در حوزه فناوری اطلاعات و مهندسی کامپیوتر.
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <h5>لینک‌های مفید</h5>
+                <a
+                        class="d-block link-primary text-decoration-none text-white"
+                        href="./L-R/register.html"
+                >عضویت در انجمن</a
+                >
+                <a
+                        class="d-block link-primary text-decoration-none text-white"
+                        href="certificates.html"
+                >استعلام گواهینامه</a
+                >
+                <a
+                        class="d-block link-primary text-decoration-none text-white"
+                        href="offline-courses.html"
+                >فایل‌های آموزشی</a
+                >
+                <a
+                        class="d-block link-primary text-decoration-none text-white"
+                        href="contactus.html"
+                >تماس با ما</a
+                >
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center">
+                <h5>شبکه‌های اجتماعی</h5>
+                <a
+                        class="d-block link-primary text-decoration-none text-white"
+                        href="#"
+                >اینستاگرام <i class="fa fa-instagram"></i></a
+                >
+                <a
+                        class="d-block link-primary text-decoration-none text-white"
+                        href="#"
+                >تلگرام<i class="fa fa-telegram"></i></a
+                >
+                <a
+                        class="d-block link-primary text-decoration-none text-white"
+                        href="#"
+                >گیت‌هاب انجمن<i class="fa fa-github"></i></a
+                >
+            </div>
         </div>
-      </div>
-      <div class="text-white text-center p-3">
-        © انجمن علمی رشته کامپیوتر - دانشگاه خوارزمی(شهرضا)
-      </div>
     </div>
-    <!-- Scripts -->
-    <script src="./src/js/bootstrap.bundle.min.js"></script>
-    <script src="./src/js/script.js"></script>
-  </body>
+    <div class="text-white text-center p-3">
+        © انجمن علمی رشته کامپیوتر - دانشگاه خوارزمی(شهرضا)
+    </div>
+</div>
+<!-- Scripts -->
+<script src="./src/js/bootstrap.bundle.min.js"></script>
+<script src="./src/js/script.js"></script>
+</body>
 </html>
