@@ -91,3 +91,12 @@ form.addEventListener('submit', (e) => {
         }, 1500);
     }
 });
+
+// Notif
+const params = new URLSearchParams(window.location.search);
+if (params.get("login") === "success") {
+    const toastEl = document.getElementById("loginToast");
+    const toast = new bootstrap.Toast(toastEl, {delay: 4000});
+    toast.show();
+}
+
