@@ -252,3 +252,11 @@ h5 {
     width: 7rem;
     height: 7rem;
 }
+
+.dotted{
+    border: 0.2rem dashed var(--Custom-Blue);
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 1rem;
+}
