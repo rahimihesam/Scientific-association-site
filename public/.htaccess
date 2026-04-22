@@ -1,8 +1,10 @@
 RewriteEngine On
 
-# if exists file or folders, open it
+<!-- # if exists file or folders, open it -->
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# everything send to index.php
+<!-- # everything send to index.php -->
+
 RewriteRule ^ index.php [QSA,L]
