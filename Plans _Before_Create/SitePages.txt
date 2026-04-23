@@ -1,0 +1,33 @@
+project/
+  ├─ index.html                (Home)--
+  ├─ courses.html              (Course List)--
+  ├─ course-detail.html        (Course Detail)--
+  ├─ learning-resources.html   (Learning Resources)--
+  ├─ articles.html             (Article List)--
+  ├─ article-detail.html       (Article Detail)--
+  ├─ news.html                 (News & Announcements)--
+  
+  ├─ certificates.html         (Certificate Verification)
+  ├─ certificate-test.html     (Certificate Verification)
+  ├─ certificate-view.html     (Certificate View)
+  
+
+  ├─ faq.html                  (FAQ)
+  ├─ about.html                (About Us)
+  ├─ contact.html              (Contact Us)
+  
+  ├─ login.html                (User Login)--
+  ├─ regester.html             (User Signup)--
+  
+  ├─ search-result.html	       (Result of Searchimg)
+  ├─ dashboard.html            (User Dashboard)
+  ├─ admin-panel.html	       (Admin Dashboard)
+  
+  └─ assets/
+      ├─ css/
+      │   └─ style.css
+      ├─ js/
+      │   └─ Script.js
+      ├─ font/
+      └─ img/
+
