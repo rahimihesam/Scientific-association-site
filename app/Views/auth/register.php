@@ -44,6 +44,8 @@
 
     <!-- Registration form -->
     <form action="/auth/register" id="registerForm" method="POST" novalidate>
+      <!-- CSRF Token -->
+      <input type="hidden" name="csrf_token" value="<?= $csrfToken ?? ''; ?>">
 
       <!-- Full Name -->
       <div class="mb-3">

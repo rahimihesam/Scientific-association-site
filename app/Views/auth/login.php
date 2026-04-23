@@ -44,6 +44,8 @@
 
     <!-- Login form -->
     <form action="/auth/login" id="loginForm" method="POST" novalidate>
+      <!-- CSRF Token -->
+      <input type="hidden" name="csrf_token" value="<?= $csrfToken ?? ''; ?>">
 
       <!-- Username field -->
       <div class="mb-3">
