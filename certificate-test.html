@@ -71,13 +71,14 @@
                     <a href="cult.html" class="nav-link custom-a">انجمن</a>
                 </li>
                 <li class="nav-item">
-                    <a href="aboutus.html" class="nav-link custom-a">درباره ما</a>
-                </li>
-                <li class="nav-item">
                     <a href="contactus.html" class="nav-link custom-a"
                     >ارتباط با ما</a
                     >
                 </li>
+                <li class="nav-item">
+                    <a href="aboutus.html" class="nav-link custom-a">درباره ما</a>
+                </li>
+
             </ul>
 
             <!-- Search Bar -->
@@ -248,14 +249,14 @@
 <script src="./src/js/bootstrap.bundle.min.js"></script>
 <script src="./src/js/script.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const cards = document.querySelectorAll('.card');
 
         cards.forEach(card => {
             const options = card.querySelectorAll('.option-item');
 
             options.forEach(option => {
-                option.addEventListener('click', function() {
+                option.addEventListener('click', function () {
                     options.forEach(opt => opt.classList.remove('active'));
                     this.classList.add('active');
                 });
