@@ -12,7 +12,7 @@
     <link href="./src/img/ico.png" rel="icon"/>
     <title>انجمن علمی دانشگاه خوارزمی(شهرضا) - خانه</title>
 </head>
-<body>
+<body class="bg-light">
 <!-- NavBar -->
 <nav class="navbar navbar-expand-xxl fixed-top bg-white border-bottom shadow-lg ">
     <div class="container-fluid">
@@ -25,7 +25,6 @@
             />
             <h5>انجمن علمی کامپیوتر</h5>
         </a>
-
         <!-- Hamburger Toggle -->
         <button
                 class="navbar-toggler custom-toggler"
@@ -35,13 +34,12 @@
         >
             <span class="toggler-icon"></span>
         </button>
-
         <!-- Collapsed Content -->
         <div class="collapse navbar-collapse" id="nav-collapse">
             <!-- Menus -->
             <ul class="navbar-nav mx-auto text-center mb-2 mb-xxl-0">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link custom-a custom-a-active"
+                    <a href="index.html" class="nav-link custom-a"
                     >خانه</a
                     >
                 </li>
@@ -73,15 +71,14 @@
                     <a href="cult.html" class="nav-link custom-a">انجمن</a>
                 </li>
                 <li class="nav-item">
-                    <a href="aboutus.html" class="nav-link custom-a">درباره ما</a>
-                </li>
-                <li class="nav-item">
                     <a href="contactus.html" class="nav-link custom-a"
                     >ارتباط با ما</a
                     >
                 </li>
+                <li class="nav-item">
+                    <a href="aboutus.html" class="nav-link custom-a">درباره ما</a>
+                </li>
             </ul>
-
             <!-- Search Bar -->
             <form class="d-flex mx-auto my-3 my-xxl-0 search-box" role="search">
                 <input
@@ -96,7 +93,6 @@
                     <i class="fa fa-search"></i>
                 </button>
             </form>
-
             <!-- Login Buttons -->
             <a
                     href="login.html"
@@ -109,12 +105,117 @@
                     class="btn btn-outline-primary rounded-4 d-block p-2 me-lg-1 m-1"
             >ثبت نام</a
             >
+            <a
+                    href="user-dashboard.html"
+                    class="btn btn-outline-primary rounded-4 d-block p-2 me-lg-1 m-1 position-relative"
+            >
+                <i class="fa fa-bell"></i>
+                <!-- Badge -->
+                <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                        0
+                </span>
+            </a>
         </div>
     </div>
 </nav>
 
+<br>
+<br>
+<div class="container mb-4 hero-margin">
+    <div class="bg-white border-5 rounded-4 p-3 shadow-lg border-start border-primary">
+        <h5 class="mb-3">نتایج جستجو</h5>
+        <form id="search-form" class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label small">عبارت جستجو</label>
+                <input id="search-query" name="q" type="text" class="form-control border-2" placeholder="مثلاً: Python">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label small">نوع محتوا</label>
+                <select id="search-type" class="form-select border-2">
+                    <option value="all">همه</option>
+                    <option value="course">دوره</option>
+                    <option value="article">مقاله</option>
+                    <option value="resource">فایل/ویدئو</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label small">دسته‌بندی</label>
+                <select id="search-category" class="form-select border-2">
+                    <option value="all">همه</option>
+                    <option value="programming">برنامه‌نویسی</option>
+                    <option value="ai">AI</option>
+                    <option value="web">وب</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-outline-primary border-1 w-100">جستجو</button>
+            </div>
+        </form>
+        <p class="small text-muted mt-2">
+            عبارت <span id="search-term-label" class="fw-bold">–</span>
+        </p>
+    </div>
+</div>
+
+
+<!-- RESULT COUNT  -->
+<div class="container mb-3">
+    <span id="result-count-label" class="text-muted small">
+        ۳ نتیجه یافت شد
+    </span>
+</div>
+
+
+<!--  RESULTS  -->
+<div class="container d-flex flex-column gap-3" id="search-results">
+    <div class="card rounded-4">
+        <div class="card-body">
+            <span class="badge bg-primary">دوره</span>
+            <h5 class="mt-2">
+                برنامه‌نویسی پیشرفته پایتون
+            </h5>
+            <p class=" text-muted mb-1">سطح: پیشرفته</p>
+            <p class=" mb-2">آموزش مباحث پیشرفته پایتون...</p>
+            <a href="#" class=" text-primary link-success text-decoration-none ">مشاهده دوره</a>
+        </div>
+    </div>
+    <div class="card rounded-4">
+        <div class="card-body">
+            <span class="badge bg-warning">فایل/ویدئو</span>
+            <h5 class="mt-2">
+                برنامه‌نویسی پیشرفته پایتون
+            </h5>
+            <p class=" text-muted mb-1">سطح: پیشرفته</p>
+            <p class=" mb-2">آموزش مباحث پیشرفته پایتون...</p>
+            <a href="#" class=" text-primary link-success text-decoration-none ">دانلود</a>
+        </div>
+    </div>
+    <div class="card rounded-4">
+        <div class="card-body">
+            <span class="badge bg-danger">مقاله</span>
+            <h5 class="mt-2">میکروسرویس‌ها چیست؟</h5>
+            <p class=" text-muted mb-1">نویسنده: حسام</p>
+            <p class=" mb-2">توضیح معماری میکروسرویس‌ها...</p>
+            <a href="#" class=" text-primary link-success text-decoration-none ">مطالعه مقاله</a>
+        </div>
+    </div>
+
+</div>
+<!-- پیام عدم وجود نتیجه -->
+<div class="container">
+    <h1
+            id="search-empty"
+            class="alert alert-warning text-center mt-3 d-none"
+    >
+        هیچ نتیجه‌ای یافت نشد.
+    </h1>
+</div>
 
 <!-- Footter -->
+<br>
 <div class="bg-dark">
     <div class="container py-3 border-bottom">
         <div class="row text-white d-flex">
@@ -172,20 +273,6 @@
         © انجمن علمی رشته کامپیوتر - دانشگاه خوارزمی(شهرضا)
     </div>
 </div>
-
-
-<div class="toast-container position-fixed top-0 end-0 p-3">
-    <div id="loginToast" class="toast align-items-center text-bg-success border-0">
-        <div class="d-flex">
-            <div class="toast-body">
-                حسام عزیز، خوش برگشتی! ورود موفقیت‌آمیز بود.
-            </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
-        </div>
-    </div>
-</div>
-
-
 <!-- Scripts -->
 <script src="./src/js/bootstrap.bundle.min.js"></script>
 <script src="./src/js/script.js"></script>

@@ -407,3 +407,19 @@ h5 {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(52, 152, 219, 0.6);
 }
+
+/*Search page*/
+/* ظریف‌تر کردن کارت‌ها */
+.card-body {
+    padding: 0.9rem 1rem;
+}
+
+/* نمایش/مخفی‌سازی سریع */
+.d-none {
+    display: none !important;
+}
+
+/*01 Bros*/
+.Bros{
+    background-color: #000000;
+}
