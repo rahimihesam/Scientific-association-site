@@ -429,6 +429,13 @@ h5 {
 #network,
 #webdev,
 #ai,
-#prog {
+#prog,
+#ActiveCourses,
+#FutureEvents,
+#Certificates,
+#news,
+#events,
+#announcement,
+#faq{
     scroll-margin-top: 100px;
 }
