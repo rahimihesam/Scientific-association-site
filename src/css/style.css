@@ -277,10 +277,12 @@ h5 {
     transition: all 0.3s ease;
     background-color: white;
 }
+
 .option-item:hover {
     border-color: #0d6efd;
     background-color: #f8f9ff;
 }
+
 .option-item.active {
     border-color: #0d6efd;
     background-color: #e7f1ff;
@@ -420,6 +422,13 @@ h5 {
 }
 
 /*01 Bros*/
-.Bros{
+.Bros {
     background-color: #000000;
+}
+
+#network,
+#webdev,
+#ai,
+#prog {
+    scroll-margin-top: 100px;
 }
