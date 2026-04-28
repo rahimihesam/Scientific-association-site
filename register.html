@@ -9,7 +9,7 @@
 </head>
 <body class="d-flex align-items-center justify-content-center min-vh-100 bg-light py-5">
 
-<div class="card shadow-sm border-0 rounded-4 p-4" style="width: 100%; max-width: 480px;">
+<div class="card shadow-sm rounded-4 p-4 border-primary" style="width: 100%; max-width: 480px;">
     <div class="text-center mb-4">
         <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center mb-3"
              style="width:56px;height:56px;">
@@ -203,10 +203,10 @@
         if (/[^A-Za-z0-9]/.test(val)) score++;
 
         const levels = [
-            { width: '25%', cls: 'bg-danger',  label: 'ضعیف',  labelCls: 'text-danger'  },
-            { width: '50%', cls: 'bg-warning', label: 'متوسط', labelCls: 'text-warning' },
-            { width: '75%', cls: 'bg-info',    label: 'خوب',   labelCls: 'text-info'    },
-            { width: '100%',cls: 'bg-success', label: 'قوی',   labelCls: 'text-success' },
+            {width: '25%', cls: 'bg-danger', label: 'ضعیف', labelCls: 'text-danger'},
+            {width: '50%', cls: 'bg-warning', label: 'متوسط', labelCls: 'text-warning'},
+            {width: '75%', cls: 'bg-info', label: 'خوب', labelCls: 'text-info'},
+            {width: '100%', cls: 'bg-success', label: 'قوی', labelCls: 'text-success'},
         ];
 
         const lvl = levels[score - 1] || levels[0];
