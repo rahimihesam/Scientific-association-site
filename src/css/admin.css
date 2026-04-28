@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+    #sidebar {
+        width: 240px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+}
