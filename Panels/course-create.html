@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="../src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../src/css/admin.css"/>
+    <link
+            href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            rel="stylesheet"
+    />
+    <link href="../src/img/ico.png" rel="icon"/>
+    <title>افزودن دوره</title>
+</head>
+<body class="bg-secondary-subtle">
+
+<!--Side-Bar-Btn-->
+<nav class="navbar navbar-dark bg-secondary navbar-expand-xxl d-xxl-none px-3">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container-fluid">
+    <!--    Side-Bar-->
+    <div class="row">
+        <div
+                class="offcanvas-xxl offcanvas-start bg-secondary text-white"
+                tabindex="-1"
+                id="sidebar"
+        >
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title">منو</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="navbar-nav">
+                    <h5 class="text-light p-3 text-center">پنل مدیریت</h5>
+                    <li class="nav-item"><a href="../index.html"
+                                            class=" text-start btn my-1 btn-outline-light py-2 w-100 active">برگشت</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100 ">ادمین ها</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100 ">دانشجویان</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100 ">مدرسین</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100 ">دوره ها</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100">مقاله ها</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100 ">فایل های آموزش آفلاین
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class=" text-start btn my-1 btn-outline-light py-2 borde w-100 ">اعلانات
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn my-1 btn-danger text-light w-100 ">خروج</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div class="col-md-10 offset-md-2 p-4">
+        <div class="container my-5">
+            <form id="courseForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="title">نام دوره</label>
+                        <input class="C-input" id="title" name="title" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="level">سطح</label>
+                        <select class="C-select" id="level" name="level" required>
+                            <option value="">انتخاب کنید...</option>
+                            <option value="beginner">مبتدی</option>
+                            <option value="intermediate">متوسط</option>
+                            <option value="advanced">پیشرفته</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">هزینه (تومان)</label>
+                        <input class="C-input" id="price" name="price" type="number" min="0" step="1000" required>
+                        <small class="C-small">اگر 0 وارد کنید، دوره رایگان در نظر گرفته می‌شود.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">مدت دوره (ساعت / جلسه)</label>
+                        <input class="C-input" id="duration" name="duration" type="text"
+                               placeholder="مثلاً 20 ساعت یا 10 جلسه">
+                    </div>
+                </div>
+                <!-- مدرس و تصویر -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="instructor">مدرس</label>
+                        <select class="C-select" id="instructor" name="instructorId" required>
+                            <option value="">انتخاب کنید...</option>
+                            <option value="1">حسام جعفری</option>
+                            <option value="2">دکتر رضایی</option>
+                            <option value="3">مهندس کریمی</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">عکس دوره</label>
+                        <input class="C-input" id="image" name="image" type="file" accept="image/*">
+                        <small>فرمت‌های مجاز: jpg, png, webp — حداکثر 2MB</small>
+                    </div>
+                    <div class="form-group">
+                        <label>پیش‌نمایش تصویر</label>
+                        <div class="image-preview" id="imagePreview">
+                            بدون تصویر
+                        </div>
+                    </div>
+                </div>
+                <!-- معرفی -->
+                <div class="form-group">
+                    <label for="description">معرفی و توضیحات دوره</label>
+                    <textarea class="C-textarea" id="description" name="description"
+                              placeholder="توضیح کلی درباره دوره، اهداف، مخاطبین و...">
+                    </textarea>
+                </div>
+                <!-- پیش‌نیازها -->
+                <div class="form-group">
+                    <div class="section-header">
+                        <div>
+                            <label>پیش‌نیازها</label>
+                            <small>مواردی که بهتر است دانشجو قبل از شروع دوره بلد باشد.</small>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm mt-3" id="addPrereqBtn">➕ افزودن پیش‌نیاز
+                        </button>
+                    </div>
+
+                    <div class="dynamic-list" id="prereqList">
+                        <!-- آیتم‌ها توسط JS اضافه می‌شوند -->
+                    </div>
+                </div>
+
+                <!-- سرفصل‌ها -->
+                <div class="form-group">
+                    <div class="section-header">
+                        <div>
+                            <label>سرفصل‌ها</label>
+                            <small>ساختار کلی دوره، فصل‌ها و مباحث اصلی.</small>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm mt-3" id="addSectionBtn">➕ افزودن سرفصل
+                        </button>
+                    </div>
+
+                    <div class="dynamic-list" id="sectionsList">
+                        <!-- آیتم‌ها توسط JS اضافه می‌شوند -->
+                    </div>
+                </div>
+
+                <!-- دکمه -->
+                <div class="actions">
+                    <button type="submit" class="btn btn-primary"> انتشار دوره</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    /* -------- Image Preview -------- */
+
+    const imageInput = document.getElementById('image');
+    const imagePreview = document.getElementById('imagePreview');
+
+    imageInput.addEventListener('change', () => {
+        const file = imageInput.files[0];
+        if (!file) {
+            imagePreview.innerHTML = 'بدون تصویر';
+            return;
+        }
+
+        // Validation سایز و نوع
+        const maxSize = 2 * 1024 * 1024; // 2MB
+        if (!file.type.startsWith('image/')) {
+            alert('فایل انتخاب‌شده تصویر نیست.');
+            imageInput.value = '';
+            imagePreview.innerHTML = 'بدون تصویر';
+            return;
+        }
+        if (file.size > maxSize) {
+            alert('حجم تصویر نباید بیشتر از 2 مگابایت باشد.');
+            imageInput.value = '';
+            imagePreview.innerHTML = 'بدون تصویر';
+            return;
+        }
+
+        // نمایش پیش‌نمایش
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            imagePreview.innerHTML = '<img src="' + e.target.result + '" alt="Course Image">';
+        };
+        reader.readAsDataURL(file);
+    });
+
+    /* -------- Dynamic Prerequisites -------- */
+
+    const prereqList = document.getElementById('prereqList');
+    const addPrereqBtn = document.getElementById('addPrereqBtn');
+
+    let prereqCounter = 0;
+
+    function addPrerequisite(value = '') {
+        prereqCounter++;
+        const id = 'prereq-' + prereqCounter;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'dynamic-item';
+        wrapper.dataset.type = 'prerequisite';
+
+        wrapper.innerHTML = `
+        <div class="dynamic-item-header">
+            <span>پیش‌نیاز</span>
+            <button type="button" class="btn btn-danger btn-sm js-remove">حذف</button>
+        </div>
+        <input class="C-input" type="text" class="js-prereq-input" placeholder="مثلاً آشنایی با HTML" value="${value}">
+    `;
+
+        prereqList.appendChild(wrapper);
+    }
+
+    addPrereqBtn.addEventListener('click', () => {
+        addPrerequisite();
+    });
+
+    prereqList.addEventListener('click', (e) => {
+        if (e.target.classList.contains('js-remove')) {
+            const item = e.target.closest('.dynamic-item');
+            if (item) item.remove();
+        }
+    });
+
+    /* -------- Dynamic Sections  -------- */
+
+    const sectionsList = document.getElementById('sectionsList');
+    const addSectionBtn = document.getElementById('addSectionBtn');
+
+    let sectionCounter = 0;
+
+    function addSection(data = {title: '', description: ''}) {
+        sectionCounter++;
+        const id = 'section-' + sectionCounter;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'dynamic-item';
+        wrapper.dataset.type = 'section';
+
+        wrapper.innerHTML = `
+        <div class="dynamic-item-header">
+            <span>سرفصل</span>
+            <button type="button" class="btn btn-danger btn-sm js-remove">حذف</button>
+        </div>
+        <div class="form-group">
+            <label>عنوان سرفصل</label>
+            <input class="C-input" type="text" class="js-section-title" placeholder="مثلاً مقدمه‌ای بر دوره" value="${data.title}">
+        </div>
+        <div class="form-group">
+            <label>توضیح سرفصل</label>
+            <textarea class="js-section-desc C-textarea" placeholder="در این بخش چه چیزهایی آموزش داده می‌شود؟">${data.description}</textarea>
+        </div>
+    `;
+
+        sectionsList.appendChild(wrapper);
+    }
+
+    addSectionBtn.addEventListener('click', () => {
+        addSection();
+    });
+
+    sectionsList.addEventListener('click', (e) => {
+        if (e.target.classList.contains('js-remove')) {
+            const item = e.target.closest('.dynamic-item');
+            if (item) item.remove();
+        }
+    });
+
+    /* -------- Form Submit & Data Collect -------- */
+
+    const courseForm = document.getElementById('courseForm');
+    const outputDebug = document.getElementById('outputDebug');
+    const saveDraftBtn = document.getElementById('saveDraftBtn');
+
+    function collectFormData(status = 'published') {
+        const formData = new FormData(courseForm);
+
+        // پایه
+        const data = {
+            title: formData.get('title')?.trim() || '',
+            level: formData.get('level') || '',
+            price: Number(formData.get('price') || 0),
+            duration: formData.get('duration')?.trim() || '',
+            instructorId: formData.get('instructorId') || null,
+            description: formData.get('description')?.trim() || '',
+            status, // 'draft' | 'published'
+            prerequisites: [],
+            syllabus: []
+        };
+
+        // پیش‌نیازها
+        prereqList.querySelectorAll('.dynamic-item').forEach(item => {
+            const input = item.querySelector('.js-prereq-input');
+            if (input && input.value.trim() !== '') {
+                data.prerequisites.push(input.value.trim());
+            }
+        });
+
+        // سرفصل‌ها
+        sectionsList.querySelectorAll('.dynamic-item').forEach(item => {
+            const titleInput = item.querySelector('.js-section-title');
+            const descInput = item.querySelector('.js-section-desc');
+            const title = titleInput?.value.trim() || '';
+            const description = descInput?.value.trim() || '';
+            if (title !== '' || description !== '') {
+                data.syllabus.push({title, description});
+            }
+        });
+
+        return data;
+    }
+
+    courseForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const data = collectFormData('published');
+
+        // نمونه ساده از Validation
+        if (!data.title) {
+            alert('نام دوره الزامی است.');
+            return;
+        }
+        if (!data.level) {
+            alert('سطح دوره را مشخص کنید.');
+            return;
+        }
+
+        outputDebug.hidden = false;
+        outputDebug.textContent = JSON.stringify(data, null, 2);
+        alert('داده دوره آماده ارسال به سرور است (در کنسول پایین صفحه نمایش داده شد).');
+    });
+
+    saveDraftBtn.addEventListener('click', () => {
+        const data = collectFormData('draft');
+        outputDebug.hidden = false;
+        outputDebug.textContent = JSON.stringify(data, null, 2);
+        alert('پیش‌نویس آماده است (فقط در فرانت ذخیره/نمایش داده شده).');
+    });
+
+
+    addPrerequisite('آشنایی مقدماتی با کامپیوتر');
+    addSection({title: 'معرفی دوره', description: 'در این بخش با ساختار دوره و اهداف کلی آن آشنا می‌شوید.'});
+
+</script>
+<script src="../src/js/bootstrap.bundle.min.js"></script>
+<script src="../src/js/admin.js"></script>
+<script src="../src/js/script.js"></script>
+</body>
+</html>
