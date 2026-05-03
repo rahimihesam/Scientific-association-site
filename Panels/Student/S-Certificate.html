@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="../../src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../../src/css/admin.css"/>
+    <link
+            href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            rel="stylesheet"
+    />
+    <link href="../../src/img/ico.png" rel="icon"/>
+    <title>پنل شخصی</title>
+</head>
+<body class="bg-secondary-subtle">
+<!--Side-Bar-Btn-->
+<nav class="navbar navbar-dark bg-secondary navbar-expand-xxl d-xxl-none px-3">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container-fluid">
+    <!-- Side-Bar -->
+    <div class="row">
+        <div
+                class="offcanvas-xxl offcanvas-start bg-secondary text-white"
+                tabindex="-1"
+                id="sidebar"
+        >
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title">منو</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="navbar-nav">
+                    <h5 class="text-light p-3 text-center">پنل مدیریت</h5>
+                    <li class="nav-item">
+                        <a href="./S-Dasboard.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            بازگشت به صفحه قبلی
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./S-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100">
+                            دوره ها
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./S-Certificate.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 active">
+                            گواهینامه ها
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./S-Notifs.html" class=" text-start btn my-1 btn-outline-light py-2 borde w-100 ">
+                            اعلانات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn my-1 btn-danger text-light w-100 ">
+                            خروج
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-10 offset-md-2 p-4">
+        <div class="container">
+            <h3 class="text-primary">گواهی های قابل دریافت</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card d-flex p-0 mt-1 border-0 ">
+                        <div
+                                class="card-body border-5 border-start border-primary"
+                        >
+                            <h5> کارگاه Git & GitHub </h5>
+                            <p class="p-2">
+                                <span>نمره:</span>
+                                <span>89</span>
+                            </p>
+                            <p class="p-2">
+                                <span>تاریخ دریافت:</span>
+                                <span>10/2/1404</span>
+                            </p>
+                            <a href="../../certificate-view.html"
+                               class="d-block text-decoration-none btn btn-outline-primary my-3 border-1">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card d-flex p-0 mt-1 border-0 ">
+                        <div
+                                class="card-body border-5 border-start border-primary"
+                        >
+                            <h5> کارگاه Git & GitHub </h5>
+                            <p class="p-2">
+                                <span>نمره:</span>
+                                <span>89</span>
+                            </p>
+                            <p class="p-2">
+                                <span>تاریخ دریافت:</span>
+                                <span>10/2/1404</span>
+                            </p>
+                            <a href="../../certificate-view.html"
+                               class="d-block text-decoration-none btn btn-outline-primary my-3 border-1">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card d-flex p-0 mt-1 border-0 ">
+                        <div
+                                class="card-body border-5 border-start border-primary"
+                        >
+                            <h5> کارگاه Git & GitHub </h5>
+                            <p class="p-2">
+                                <span>نمره:</span>
+                                <span>89</span>
+                            </p>
+                            <p class="p-2">
+                                <span>تاریخ دریافت:</span>
+                                <span>10/2/1404</span>
+                            </p>
+                            <a href="../../certificate-view.html"
+                               class="d-block text-decoration-none btn btn-outline-primary my-3 border-1">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="../../src/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/js/admin.js"></script>
+<script src="../../src/js/script.js"></script>
+</body>
+</html>
