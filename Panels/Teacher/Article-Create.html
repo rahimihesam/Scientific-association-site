@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="../../src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../../src/css/admin.css"/>
+    <link
+            href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            rel="stylesheet"
+    />
+    <link href="../../src/img/ico.png" rel="icon"/>
+    <title>پنل شخصی-مقالات</title>
+</head>
+<body class="bg-secondary-subtle">
+<!--Side-Bar-Btn-->
+<nav class="navbar navbar-dark bg-secondary navbar-expand-xxl d-xxl-none px-3">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container-fluid">
+    <!-- Side-Bar -->
+    <div class="row">
+        <div
+                class="offcanvas-xxl offcanvas-start bg-secondary text-white"
+                tabindex="-1"
+                id="sidebar"
+        >
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title">منو</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="navbar-nav">
+                    <h5 class="text-light p-3 text-center">پنل مدیریت</h5>
+                    <li class="nav-item">
+                        <a href="./T-Articles.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            بازگشت به صفحه قبلی
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            دوره ها
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./T-Articles.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 active">
+                            مقالات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Offline-Oourses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            فایل های قابل دانلود
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Notifs.html" class=" text-start btn my-1 btn-outline-light py-2 borde w-100 ">
+                            اعلانات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn my-1 btn-danger text-light w-100 ">
+                            خروج
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div class="col-md-10 offset-md-2 p-4">
+        <div class="container my-5">
+            <form id="courseForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="title">عنوان مقاله</label>
+                        <input class="C-input" id="title" name="title" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="summary">چکیده مقاله</label>
+                        <input class="C-input" id="summary" name="summary" type="text">
+                    </div>
+                </div>
+                <!-- معرفی -->
+                <div class="form-group">
+                    <label for="description">معرفی و توضیحات مقاله</label>
+                    <textarea class="C-textarea" id="description" name="description"
+                              placeholder="توضیح کلی درباره مقاله">
+                    </textarea>
+                </div>
+                <!-- سرفصل‌ها -->
+                <div class="form-group">
+                    <div class="section-header">
+                        <div>
+                            <label>ریز عنوان ها</label>
+                            <small>ساختار کلی مقاله، فصل‌ها و مباحث اصلی.</small>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm mt-3" id="addSectionBtn">➕ افزودن ریزعنوان
+                        </button>
+                    </div>
+                    <div class="dynamic-list" id="sectionsList">
+                        <!-- آیتم‌ها توسط JS اضافه می‌شوند -->
+                    </div>
+                </div>
+                <!-- دکمه -->
+                <div class="actions">
+                    <button type="submit" class="btn btn-primary"> انتشار مقاله</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="../../src/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/js/admin.js"></script>
+<script src="../../src/js/script.js"></script>
+<script>
+    /* -------- Dynamic Sections  -------- */
+
+    const sectionsList = document.getElementById('sectionsList');
+    const addSectionBtn = document.getElementById('addSectionBtn');
+
+    let sectionCounter = 0;
+
+    function addSection(data = {title: '', description: ''}) {
+        sectionCounter++;
+        const id = 'section-' + sectionCounter;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'dynamic-item';
+        wrapper.dataset.type = 'section';
+
+        wrapper.innerHTML = `
+        <div class="dynamic-item-header">
+            <span>ریزعنوان</span>
+            <button type="button" class="btn btn-danger btn-sm js-remove">حذف</button>
+        </div>
+        <div class="form-group">
+            <label>ریزعنوان</label>
+            <input class="C-input" type="text" class="js-section-title" value="${data.title}">
+        </div>
+        <div class="form-group">
+            <label> توضیحات</label>
+            <textarea class="js-section-desc C-textarea" >${data.description}</textarea>
+        </div>
+    `;
+
+        sectionsList.appendChild(wrapper);
+    }
+
+    addSectionBtn.addEventListener('click', () => {
+        addSection();
+    });
+
+    sectionsList.addEventListener('click', (e) => {
+        if (e.target.classList.contains('js-remove')) {
+            const item = e.target.closest('.dynamic-item');
+            if (item) item.remove();
+        }
+    });
+
+    /* -------- Form Submit & Data Collect -------- */
+
+    const courseForm = document.getElementById('courseForm');
+    const outputDebug = document.getElementById('outputDebug');
+    const saveDraftBtn = document.getElementById('saveDraftBtn');
+
+    function collectFormData(status = 'published') {
+        const formData = new FormData(courseForm);
+
+        // سرفصل‌ها
+        sectionsList.querySelectorAll('.dynamic-item').forEach(item => {
+            const titleInput = item.querySelector('.js-section-title');
+            const descInput = item.querySelector('.js-section-desc');
+            const title = titleInput?.value.trim() || '';
+            const description = descInput?.value.trim() || '';
+            if (title !== '' || description !== '') {
+                data.syllabus.push({title, description});
+            }
+        });
+
+        return data;
+    }
+
+    courseForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const data = collectFormData('published');
+
+        // نمونه ساده از Validation
+        if (!data.title) {
+            alert('نام دوره الزامی است.');
+        }
+    });
+
+    addPrerequisite('آشنایی مقدماتی با کامپیوتر');
+    addSection({title: 'معرفی دوره', description: 'در این بخش با ساختار دوره و اهداف کلی آن آشنا می‌شوید.'});
+
+</script>
+</body>
+</html>
