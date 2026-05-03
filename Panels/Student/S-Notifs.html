@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="../../src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../../src/css/admin.css"/>
+    <link
+            href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            rel="stylesheet"
+    />
+    <link href="../../src/img/ico.png" rel="icon"/>
+    <title>پنل شخصی</title>
+</head>
+<body class="bg-secondary-subtle">
+<!--Side-Bar-Btn-->
+<nav class="navbar navbar-dark bg-secondary navbar-expand-xxl d-xxl-none px-3">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container-fluid">
+    <!-- Side-Bar -->
+    <div class="row">
+        <div
+                class="offcanvas-xxl offcanvas-start bg-secondary text-white"
+                tabindex="-1"
+                id="sidebar"
+        >
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title">منو</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="navbar-nav">
+                    <h5 class="text-light p-3 text-center">پنل مدیریت</h5>
+                    <li class="nav-item">
+                        <a href="./S-Dasboard.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            بازگشت به صفحه قبلی
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./S-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100">
+                            دوره ها
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./S-Certificate.html" class=" text-start btn my-1 btn-outline-light py-2 w-100">
+                            گواهینامه ها
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./S-Notifs.html"
+                           class=" text-start btn my-1 btn-outline-light py-2 borde w-100 active">
+                            اعلانات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn my-1 btn-danger text-light w-100 ">
+                            خروج
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-10 offset-md-2 p-4">
+        <div class="container">
+            <h3 class="text-primary">پیام های دریافتی</h3>
+            <div class="bg-white p-4 border-3 border-primary border-start my-4">
+                <div class="d-flex justify-content-between">
+                    <h3>عنوان</h3>
+                    <span class="text-primary">1404/10/2</span>
+                </div>
+                <p class="d-block">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum optio quas quis quod repellat! Ab
+                    animi perspiciatis reiciendis tenetur? Deserunt.
+                </p>
+            </div>
+            <div class="bg-white p-4 border-3 border-primary border-start my-4">
+                <div class="d-flex justify-content-between">
+                    <h3>عنوان</h3>
+                    <span class="text-primary">1404/10/2</span>
+                </div>
+                <p class="d-block">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum optio quas quis quod repellat! Ab
+                    animi perspiciatis reiciendis tenetur? Deserunt.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="../../src/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/js/admin.js"></script>
+<script src="../../src/js/script.js"></script>
+</body>
+</html>
