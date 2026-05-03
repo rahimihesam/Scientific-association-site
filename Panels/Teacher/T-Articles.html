@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="../../src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../../src/css/admin.css"/>
+    <link
+            href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            rel="stylesheet"
+    />
+    <link href="../../src/img/ico.png" rel="icon"/>
+    <title>پنل شخصی-مقالات</title>
+</head>
+<body class="bg-secondary-subtle">
+<!--Side-Bar-Btn-->
+<nav class="navbar navbar-dark bg-secondary navbar-expand-xxl d-xxl-none px-3">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container-fluid">
+    <!-- Side-Bar -->
+    <div class="row">
+        <div
+                class="offcanvas-xxl offcanvas-start bg-secondary text-white"
+                tabindex="-1"
+                id="sidebar"
+        >
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title">منو</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="navbar-nav">
+                    <h5 class="text-light p-3 text-center">پنل مدیریت</h5>
+                    <li class="nav-item">
+                        <a href="./T-Dashboard.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            بازگشت به صفحه قبلی
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            دوره ها
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./T-Articles.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 active">
+                            مقالات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Offline-Oourses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            فایل های قابل دانلود
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Notifs.html" class=" text-start btn my-1 btn-outline-light py-2 borde w-100 ">
+                            اعلانات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn my-1 btn-danger text-light w-100 ">
+                            خروج
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div class="col-md-10 offset-md-2 p-4">
+        <div class="container">
+            <h3 class="text-primary">مقالات بارگزاری شده</h3>
+            <a href="Article-Create.html" class="btn btn-primary d-block w-100 ">افزودن</a>
+            <!--            <div id="addarticles" class="modal fade show">-->
+            <!--                <form class="form-control container">-->
+            <!--                    <label class="form-label">عنوان مقاله</label>-->
+            <!--                    <input class="d-block w-100" type="text">-->
+            <!--                    <label class="form-label">چکیده مقاله</label>-->
+            <!--                    <input class="d-block w-100" type="text">-->
+            <!--                    <label class="form-label">متن مقاله</label>-->
+            <!--                    <textarea class="d-block w-100" type="text"></textarea>-->
+            <!--                    <button type="submit" class="btn btn-success w-100 fw-semibold py-2 mt-5" id="submitBtn">-->
+            <!--                        ثبت‌-->
+            <!--                    </button>-->
+            <!--                    <button-->
+            <!--                            class="btn btn-danger my-1 w-100"-->
+            <!--                            onclick="closeModal('addarticles')">-->
+            <!--                        بستن-->
+            <!--                    </button>-->
+            <!--                </form>-->
+            <!--            </div>-->
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm ">
+                        <div class="card-body bg-white border-start border-primary border-5 ">
+                            <h3 class="card-title py-2">آینده برنامه‌نویسی وب در عصر هوش مصنوعی</h3>
+                            <p class="card-subtitle text-secondary py-2">
+                                <span>نویسنده:</span>
+                                <span>حسام کریمی</span>
+                                |
+                                <span>۱۴۰۵/۰۸/۲</span>
+                            </p>
+                            <p class="card-text py-2">
+                                چگونه فناوری‌های هوش مصنوعی می‌توانند ساختار توسعه وب را در دهه آینده متحول
+                                کنند؟
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <a href="../../articles-detail.html"
+                                   class="text-primary link-dark text-decoration-none py-2 h5">ادامه مطلب</a>
+                                <button class="btn btn-outline-danger border-1 py-2 h5">حذف مطلب</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="../../src/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/js/admin.js"></script>
+<script src="../../src/js/script.js"></script>
+</body>
+</html>
