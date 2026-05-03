@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="../../src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../../src/css/admin.css"/>
+    <link
+            href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+            rel="stylesheet"
+    />
+    <link href="../../src/img/ico.png" rel="icon"/>
+    <title>پنل شخصی-فایل های آفلاین</title>
+</head>
+<body class="bg-secondary-subtle">
+<!--Side-Bar-Btn-->
+<nav class="navbar navbar-dark bg-secondary navbar-expand-xxl d-xxl-none px-3">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container-fluid">
+    <!-- Side-Bar -->
+    <div class="row">
+        <div
+                class="offcanvas-xxl offcanvas-start bg-secondary text-white"
+                tabindex="-1"
+                id="sidebar"
+        >
+            <div class="offcanvas-header d-md-none">
+                <h5 class="offcanvas-title">منو</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="navbar-nav">
+                    <h5 class="text-light p-3 text-center">پنل مدیریت</h5>
+                    <li class="nav-item">
+                        <a href="./T-Dashboard.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            بازگشت به صفحه قبلی
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            دوره ها
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./T-Articles.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            مقالات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Offline-Oourses.html"
+                           class=" text-start btn my-1 btn-outline-light py-2 w-100 active">
+                            فایل های قابل دانلود
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./T-Notifs.html" class=" text-start btn my-1 btn-outline-light py-2 borde w-100 ">
+                            اعلانات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn my-1 btn-danger text-light w-100 ">
+                            خروج
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div class="col-md-10 offset-md-2 p-4">
+        <div class="container">
+            <h3 class="text-primary">فایل های بارگزاری شده</h3>
+            <!-- Modal -->
+            <button
+                    class="btn btn-primary d-block w-100"
+                    onclick="openModal('addOF')">
+                افزودن
+            </button>
+            <div id="addOF" class="modal">
+                <form class="form-control container">
+                    <div class="">
+                        <label for="file"> </label>
+                        <input class="C-input" id="file" name="file" type="file" accept="file/*">
+                    </div>
+                    <label class="form-label">عنوان</label>
+                    <input class="d-block w-100" type="text">
+                    <label class="form-label">درس</label>
+                    <input class="d-block w-100" type="text">
+                    <label class="form-label">مدرس</label>
+                    <input class="d-block w-100" type="text">
+                    <label class="form-label">هزینه</label>
+                    <input class="d-block w-100" type="text">
+                    <button type="submit" class="btn btn-success w-100 fw-semibold py-2 mt-5" id="submitBtn">
+                        ثبت‌
+                    </button>
+                    <button
+                            class="btn btn-danger my-1 w-100"
+                            onclick="closeModal('addOF')">
+                        بستن
+                    </button>
+                </form>
+            </div>
+            <!-- Content-->
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 ">
+                    <div class="m-5 card  border-0">
+                        <div class="card-body border-start border-primary border-5  bg-white text-center">
+                            <h5 class="card-title mt-3">Front-End</h5>
+                            <p class="card-text py-1">
+                                <span>درس:</span>
+                                <span>وب</span>
+                            </p>
+                            <p class="card-text py-1">
+                                <span>مدرس:</span>
+                                <span>حسام</span>
+                            </p>
+                            <p class="card-text py-1">
+                                <span>نوع فایل:</span>
+                                <span>ویدیو</span>
+                            </p>
+                            <p class="card-text py-1">
+                                <span>هزینه:</span>
+                                <span>رایگان</span>
+                            </p>
+                            <a href="" class="btn btn-outline-primary border-1 ">
+                                دانلود
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="../../src/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/js/admin.js"></script>
+<script src="../../src/js/script.js"></script>
+</body>
+</html>
