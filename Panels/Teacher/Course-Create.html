@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="../src/css/bootstrap.rtl.min.css"/>
-    <link rel="stylesheet" href="../src/css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="../src/css/admin.css"/>
+    <link rel="stylesheet" href="../../src/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="../../src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../../src/css/admin.css"/>
     <link
             href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
             rel="stylesheet"
     />
-    <link href="../src/img/ico.png" rel="icon"/>
+    <link href="../../src/img/ico.png" rel="icon"/>
     <title>افزودن دوره</title>
 </head>
 <body class="bg-secondary-subtle">
@@ -27,7 +27,7 @@
     </button>
 </nav>
 <div class="container-fluid">
-    <!--    Side-Bar-->
+    <!-- Side-Bar-->
     <div class="row">
         <div
                 class="offcanvas-xxl offcanvas-start bg-secondary text-white"
@@ -41,34 +41,36 @@
             <div class="offcanvas-body p-3">
                 <ul class="navbar-nav">
                     <h5 class="text-light p-3 text-center">پنل مدیریت</h5>
-                    <li class="nav-item"><a href="../index.html"
-                                            class=" text-start btn my-1 btn-outline-light py-2 w-100 active">برگشت</a>
+                    <li class="nav-item">
+                        <a href="./T-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            بازگشت به صفحه قبلی
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100 ">ادمین ها</button>
+                        <a href="./T-Courses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 active">
+                            دوره ها
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./T-Articles.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            مقالات
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100 ">دانشجویان</button>
+                        <a href="./T-Offline-Oourses.html" class=" text-start btn my-1 btn-outline-light py-2 w-100 ">
+                            فایل های قابل دانلود
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100 ">مدرسین</button>
+                        <a href="./T-Notifs.html" class=" text-start btn my-1 btn-outline-light py-2 borde w-100 ">
+                            اعلانات
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100 ">دوره ها</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100">مقاله ها</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class=" text-start btn my-1 btn-outline-light py-2 w-100 ">فایل های آموزش آفلاین
+                        <button class="btn my-1 btn-danger text-light w-100 ">
+                            خروج
                         </button>
-                    </li>
-                    <li class="nav-item">
-                        <button class=" text-start btn my-1 btn-outline-light py-2 borde w-100 ">اعلانات
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn my-1 btn-danger text-light w-100 ">خروج</button>
                     </li>
                 </ul>
             </div>
@@ -272,8 +274,8 @@
             <input class="C-input" type="text" class="js-section-title" placeholder="مثلاً مقدمه‌ای بر دوره" value="${data.title}">
         </div>
         <div class="form-group">
-            <label>توضیح سرفصل</label>
-            <textarea class="js-section-desc C-textarea" placeholder="در این بخش چه چیزهایی آموزش داده می‌شود؟">${data.description}</textarea>
+            <label>توضیح یا لینک ویدیو سرفصل</label>
+            <textarea class="js-section-desc C-textarea" placeholder="در این بخش چه چیزهایی آموزش داده می‌شود یا می توانید لینک ویدیو رو جایگزاری کنید.">${data.description}</textarea>
         </div>
     `;
 
@@ -367,8 +369,8 @@
     addSection({title: 'معرفی دوره', description: 'در این بخش با ساختار دوره و اهداف کلی آن آشنا می‌شوید.'});
 
 </script>
-<script src="../src/js/bootstrap.bundle.min.js"></script>
-<script src="../src/js/admin.js"></script>
-<script src="../src/js/script.js"></script>
+<script src="../../src/js/bootstrap.bundle.min.js"></script>
+<script src="../../src/js/admin.js"></script>
+<script src="../../src/js/script.js"></script>
 </body>
 </html>
