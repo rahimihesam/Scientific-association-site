@@ -65,6 +65,29 @@
                 <div class="valid-feedback">ایمیل معتبر است.</div>
             </div>
         </div>
+        <!--Phone Number-->
+        <div class="mb-3">
+            <label for="phon-number" class="form-label fw-medium">شماره تلفن</label>
+            <div class="input-group">
+             <span class="input-group-text bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                     fill="currentColor"
+                     class="text-secondary"
+                     viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 1 .737-.166l2.522 1.01c.329.132.525.464.475.806l-.5 3.479a.678.678 0 0 1-.743.58l-1.635-.163a11.72 11.72 0 0 0 5.058 5.058l.163-1.635a.678.678 0 0 1 .58-.743l3.479-.5a.678.678 0 0 1 .806.475l1.01 2.522a.678.678 0 0 1-.166.737l-1.29 1.29c-.733.733-1.826.98-2.747.623a17.478 17.478 0 0 1-6.482-4.03 17.478 17.478 0 0 1-4.03-6.482c-.357-.921-.11-2.014.623-2.747l1.29-1.29z"/>
+                </svg>
+             </span>
+                <input
+                        type="number"
+                        class="form-control rounded-end-2"
+                        id="phon-number"
+                        placeholder="09131234567"
+                        required
+                >
+                <div class="invalid-feedback">لطفاً یک شماره معتبر وارد کنید.</div>
+                <div class="valid-feedback">شماره معتبر است.</div>
+            </div>
+        </div>
         <!-- Password -->
         <div class="mb-3">
             <label for="password" class="form-label fw-medium">رمز عبور</label>
@@ -131,15 +154,15 @@
             <div class="valid-feedback">رمز عبور مطابقت دارد.</div>
         </div>
         <!-- Terms -->
-        <div class="mb-4">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="terms" required>
-                <label class="form-check-label small text-muted" for="terms">
-                    <a href="#" class="text-primary text-decoration-none">قوانین و مقررات</a> را مطالعه کرده و می‌پذیرم
-                </label>
-                <div class="invalid-feedback">باید قوانین را بپذیرید.</div>
-            </div>
-        </div>
+        <!--        <div class="mb-4">-->
+        <!--            <div class="form-check">-->
+        <!--                <input class="form-check-input" type="checkbox" id="terms" required>-->
+        <!--                <label class="form-check-label small text-muted" for="terms">-->
+        <!--                    <a href="#" class="text-primary text-decoration-none">قوانین و مقررات</a> را مطالعه کرده و می‌پذیرم-->
+        <!--                </label>-->
+        <!--                <div class="invalid-feedback">باید قوانین را بپذیرید.</div>-->
+        <!--            </div>-->
+        <!--        </div>-->
         <!-- Submit -->
         <button type="submit" class="btn btn-primary w-100 fw-semibold py-2" id="submitBtn">
             ثبت‌نام
