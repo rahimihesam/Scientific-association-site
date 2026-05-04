@@ -12,8 +12,10 @@
 
 <div class="card shadow-sm border border-primary rounded-4 p-4" style="width: 100%; max-width: 420px;">
     <div class="text-center mb-4">
-        <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="text-primary" viewBox="0 0 16 16">
+        <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center mb-3"
+             style="width:56px;height:56px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="text-primary"
+                 viewBox="0 0 16 16">
                 <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
             </svg>
         </div>
@@ -23,22 +25,23 @@
     <form id="loginForm" novalidate>
         <!-- Email -->
         <div class="mb-3">
-            <label for="email" class="form-label fw-medium">ایمیل</label>
+            <label for="text" class="form-label fw-medium">ایمیل یا شماره تلفن</label>
             <div class="input-group">
           <span class="input-group-text bg-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-secondary" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-secondary"
+                 viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 1 .737-.166l2.522 1.01c.329.132.525.464.475.806l-.5 3.479a.678.678 0 0 1-.743.58l-1.635-.163a11.72 11.72 0 0 0 5.058 5.058l.163-1.635a.678.678 0 0 1 .58-.743l3.479-.5a.678.678 0 0 1 .806.475l1.01 2.522a.678.678 0 0 1-.166.737l-1.29 1.29c-.733.733-1.826.98-2.747.623a17.478 17.478 0 0 1-6.482-4.03 17.478 17.478 0 0 1-4.03-6.482c-.357-.921-.11-2.014.623-2.747l1.29-1.29z"/>
             </svg>
           </span>
                 <input
-                        type="email"
+                        type="text"
                         class="form-control rounded-end-2"
-                        id="email"
-                        placeholder="example@email.com"
+                        id="text"
+                        placeholder="example@email.com/0913xxxxxxx"
                         required
                 >
-                <div class="invalid-feedback">لطفاً یک ایمیل معتبر وارد کنید.</div>
-                <div class="valid-feedback">ایمیل معتبر است.</div>
+                <!--                <div class="invalid-feedback">لطفاً یک ایمیل معتبر وارد کنید.</div>-->
+                <!--                <div class="valid-feedback">ایمیل معتبر است.</div>-->
             </div>
         </div>
         <!-- Password -->
@@ -46,7 +49,8 @@
             <label for="password" class="form-label fw-medium">رمز عبور</label>
             <div class="input-group">
           <span class="input-group-text bg-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-secondary" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-secondary"
+                 viewBox="0 0 16 16">
               <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
             </svg>
           </span>
@@ -58,30 +62,32 @@
                         required
                         minlength="8"
                 >
-                <button class="input-group-text toggle-password bg-white" type="button" id="togglePassword" aria-label="نمایش رمز">
-                    <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-secondary" viewBox="0 0 16 16">
+                <button class="input-group-text toggle-password bg-white" type="button" id="togglePassword"
+                        aria-label="نمایش رمز">
+                    <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="text-secondary" viewBox="0 0 16 16">
                         <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
                         <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
                     </svg>
                 </button>
             </div>
             <!-- Strength bar -->
-            <div class="strength-bar mt-2">
-                <div class="strength-fill" id="strengthFill"></div>
-            </div>
-            <div class="mt-1">
-                <small id="strengthLabel" class="text-muted"></small>
-            </div>
+            <!--            <div class="strength-bar mt-2">-->
+            <!--                <div class="strength-fill" id="strengthFill"></div>-->
+            <!--            </div>-->
+            <!--            <div class="mt-1">-->
+            <!--                <small id="strengthLabel" class="text-muted"></small>-->
+            <!--            </div>-->
             <div class="invalid-feedback d-block small" id="passwordError"></div>
         </div>
         <!-- Remember + Forgot -->
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <div class="form-check mb-0">
-                <input class="form-check-input" type="checkbox" id="rememberMe">
-                <label class="form-check-label small text-muted" for="rememberMe">مرا به خاطر بسپار</label>
-            </div>
-            <a href="#" class="small text-primary text-decoration-none">فراموشی رمز؟</a>
-        </div>
+        <!--        <div class="d-flex justify-content-between align-items-center mb-4">-->
+        <!--            <div class="form-check mb-0">-->
+        <!--                <input class="form-check-input" type="checkbox" id="rememberMe">-->
+        <!--                <label class="form-check-label small text-muted" for="rememberMe">مرا به خاطر بسپار</label>-->
+        <!--            </div>-->
+        <!--            <a href="#" class="small text-primary text-decoration-none">فراموشی رمز؟</a>-->
+        <!--        </div>-->
         <!-- Submit -->
         <button type="submit" class="btn btn-primary w-100 fw-semibold py-2" id="submitBtn">
             ورود
